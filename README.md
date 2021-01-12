@@ -20,7 +20,7 @@ The opportunity to win a discount code incentivizes participation aswell as incr
 - Increase customer acquisition.
 - To increase brand recognition and follower engagement. 
 - Make the brand stand out from the swarm of plant-based companies during Veganuary 
-- Target a younger audience who have more disponsible income such as millennials.
+- Target a younger audience who have more disposible income such as millennials.
 
 **The customer goals of this website are:**
 
