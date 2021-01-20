@@ -11,10 +11,15 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" 
             crossorigin="anonymous">    
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="javascript" href="assets/js/script.js">
         <title>Fiid | Ireland's fav quick and nourishing vegan meals</title>
     </head>
 <body>
-                <nav id="myNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+               <!-- START OF BG IMAGE -->
+<div id="game-page" class="back-image game-background d-block">
+
+<!-- START OF NAVBAR -->
+ <nav id="myNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
                 <a class="navbar-brand" href="https://www.eatfiid.com/"><img src="assets/images/fiid-logo.jpg" height="45" alt="Fiid company logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,14 +30,14 @@
             <a class="nav-link" href="https://www.eatfiid.com/pages/our_story">OUR STORY</a>
           </li>
                   <li class="nav-item">
-              <a href="https://www.instagram.com/eatfiid/" class="nav-link"><i class="fab fa-instagram fa-lg"></i></a>
+              <a href="https://www.instagram.com/eatfiid/" class="nav-link" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
                   </li>
          <li class="nav-item">
-              <a href="https://www.facebook.com/eatfiid/" class="nav-link"><i class="fab fa-facebook fa-lg"></i></a>
+              <a href="https://www.facebook.com/eatfiid/" class="nav-link" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
           </li>
 
           <li class="nav-item">
-              <a href="https://twitter.com/eatfiid" class="nav-link"><i class="fab fa-twitter fa-lg"></i></a>
+              <a href="https://twitter.com/eatfiid" class="nav-link" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
           </li>
 
 
@@ -46,11 +51,80 @@
   
         <!-- END OF NAVBAR -->
 
-
-        <div class="imgbox">
-    <img class="center-fit" src="assets/images/memorygame-background.jpg" alt="fiid-backdrop">
+        
+<!-- START OF GAMEBOARD -->
+  <section class="fiid-game">
+<div class="game-card" data-pouch="chilli">
+<img class="front-card" src="assets/images/fiid-chilli-card.png" alt="fiid-chilli-card">
+<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
 </div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+
+<div class="game-card" data-pouch="chilli">
+<img class="front-card" src="assets/images/fiid-chilli-card.png" alt="fiid-chilli-card">
+<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
+</div>
+
+<div class="game-card" data-pouch="curry">
+<img class="front-card" src="assets/images/fiid-curry-card.png" alt="fiid-curry-card">
+<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
+</div>
+
+<div class="game-card" data-pouch="curry">
+<img class="front-card" src="assets/images/fiid-curry-card.png" alt="fiid-curry-card">
+<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
+</div>
+
+<div class="game-card" data-pouch="ragu">
+<img class="front-card" src="assets/images/fiid-ragu-card.png" alt="fiid-ragu-card">
+<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
+</div>
+
+<div class="game-card" data-pouch="ragu">
+<img class="front-card" src="assets/images/fiid-ragu-card.png" alt="fiid-ragu-card">
+<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
+</div>
+
+<div class="game-card" data-pouch="tagine">
+<img class="front-card" src="assets/images/fiid-tagine-card.png" alt="fiid-tagine-card">
+<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
+</div>
+
+<div class="game-card" data-pouch="tagine">
+<img class="front-card" src="assets/images/fiid-tagine-card.png" alt="fiid-tagine-card">
+<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
+</div>
+
+<div class="game-card" data-pouch="box">
+<img class="front-card" src="assets/images/fiid-box-card.png" alt="fiid-box-card">
+<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
+</div>
+
+<div class="game-card" data-pouch="box">
+<img class="front-card" src="assets/images/fiid-box-card.png" alt="fiid-box-card">
+<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
+</div>
+
+<div class="game-card" data-pouch="all">
+<img class="front-card" src="assets/images/fiid-all-card.png" alt="fiid-all-card">
+<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
+</div>
+
+<div class="game-card" data-pouch="all">
+<img class="front-card" src="assets/images/fiid-all-card.png" alt="fiid-all-card">
+<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
+</div>
+
+
+</section>
+<!-- END OF GAMEBOARD -->
+
+
+
+</div>
+<!-- END OF BG IMAGE -->
+
+<script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
             integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
