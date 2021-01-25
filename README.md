@@ -60,7 +60,7 @@ The market is saturated with plant-based products and the user wants a quality p
 To achieve the strategic goals, I wanted to include the following features in this production release:
 
 - Simple and short signup form
-- Nav bar with minimar content - i.e. just social media links and link to main site
+- Nav bar with minimal content - i.e. just social media links and link to main site
 - Simplistic timed memory game using JavaScript - including countdown and match counter
 
 ### Structure 
@@ -86,6 +86,8 @@ Due to time restraints, I was unable to include the following features but hope 
 
 In the construction of this project I have utilised the following languages, frameworks, libraries and tools:
 - **HTML5,** **CSS3** and **JavaScript** programming languages
+- Photoshop
+- https://audiotrimmer.com/
 
 
 # Testing
@@ -113,7 +115,8 @@ The text for X was adapted from:
 
 - Fiid Company Logo - [from Fiid's Website](https://cdn.shopify.com/s/files/1/0072/0165/2802/files/fiid-main-logo_410x.png?v=1531837903)
 - Fiid Header Image (with edits made in Photoshop)- [from Fiid's Website](https://cdn.shopify.com/s/files/1/0072/0165/2802/files/Website_Banner_NEW_1900x.progressive.jpg?v=1610033437)
-
+- card images 
+- yummy https://hypeddit.com/track/c0q1eo
 
 ### Acknowledgements
 
