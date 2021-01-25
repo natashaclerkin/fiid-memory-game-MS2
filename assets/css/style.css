@@ -1,19 +1,28 @@
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 
-body {
-  height: 100vh;
-  display: flex;
-  font-family: "Roboto", sans-serif;
-color: #fff;
+html {
+  min-height: 100vh;
 }
 
+body {
+  margin: 0;
+  background-image: url("../images/memorygame-background.png");
+  background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+	font-family: "Roboto", sans-serif;
+}
 .nav-item {
     padding-right: 1rem;
     padding-left: 1rem;
+}
+
+.navbar{
+	padding: 0;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -25,64 +34,148 @@ color: #fff;
     border-color: #fff;
 }
 
-.game-background {
-    background-image: url("../images/memorygame-background.png");
+.page-title {
+  color: #000;
+  font-family: serif;
+  text-align: center;
+  font-size: 3em;
 }
 
-.back-image {
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-}
-
-.fiid-game {
-  width: 500px;
-  height: 400px;
-  margin: auto;
+.game-info-container {
+  grid-column: 1 / -1;
   display: flex;
-  flex-wrap: wrap;
-  perspective: 1000px;
-    background: #000;
-	padding: 5px;
-	position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  justify-content: space-between;
 }
 
-.game-card {
-  width: calc(25% - 10px);
-  height: calc(33.333% - 10px);
-  margin: 5px;
+.game-info {
+  font-family: serif;
+  color: green;
+  font-size: 2em;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  margin:0px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.card {
   position: relative;
-  transform: scale(1);
-  transform-style: preserve-3d;
-  transition: transform .5s;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  height: 100px;
+  width: 100px;
 }
 
-.game-card:active {
-  transform: scale(0.97);
-  transition: transform .2s;
-}
 
-.game-card.flip {
-  transform: rotateY(180deg);
-}
-
-.front-card,
-.back-card {
+.card-face {
+  position: absolute;
   width: 100%;
   height: 100%;
-  padding: 2px;
-  position: absolute;
-  border-radius: 5px;
-  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   backface-visibility: hidden;
+  border-style: solid;
+  transition: transform 500ms ease-in-out;
 }
 
-.front-card {
+.card.visible .card-back {
+  transform: rotateY(-180deg);
+}
+
+.card.visible .card-front {
+  transform: rotateY(0)
+}
+
+.card.matched .card-value {
+  animation: dance 1s linear infinite 500ms;
+}
+
+.overlay-text {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: green;
+}
+
+.overlay-text-small {
+  font-size: .3em;
+}
+
+.overlay-text.visible {
+  display: flex;
+  flex-direction: column;
+  animation: overlay-grow 500ms forwards;
+}
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, .8);
+    font-size: 4em;
+  }
+}
+
+@keyframes dance {
+  0%, 100%  {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+}
+
+.card-back {
+  background-color: #fff;
+  border-color: #000;
+}
+
+.card-front {
+  background-color: #fff;
+  border-color: #000;
   transform: rotateY(180deg);
+}
+
+.card-value {
+  transition: transform 100ms ease-in-out;
+  transform: scale(.9);
+}
+
+.card-front:hover .card-value {
+  transform: scale(1);
+}
+
+
+.fiid {
+  align-self: flex-start;
+}
+
+.card-back:hover .fiid {
+  transform: translateY(0)
+}
+
+@media (max-width: 600px) {
+  .game-container {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .game-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -11,13 +11,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" 
             crossorigin="anonymous">    
         <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="javascript" href="assets/js/script.js">
+		<script src="assets/js/script.js" async></script>
         <title>Fiid | Ireland's fav quick and nourishing vegan meals</title>
-    </head>
-<body>
-               <!-- START OF BG IMAGE -->
-<div id="game-page" class="back-image game-background d-block">
+</head>
 
+<body>
 <!-- START OF NAVBAR -->
  <nav id="myNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -51,80 +49,126 @@
   
         <!-- END OF NAVBAR -->
 
-        
-<!-- START OF GAMEBOARD -->
-  <section class="fiid-game">
-<div class="game-card" data-pouch="chilli">
-<img class="front-card" src="assets/images/fiid-chilli-card.png" alt="fiid-chilli-card">
-<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
-</div>
 
-<div class="game-card" data-pouch="chilli">
-<img class="front-card" src="assets/images/fiid-chilli-card.png" alt="fiid-chilli-card">
-<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
-</div>
-
-<div class="game-card" data-pouch="curry">
-<img class="front-card" src="assets/images/fiid-curry-card.png" alt="fiid-curry-card">
-<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
-</div>
-
-<div class="game-card" data-pouch="curry">
-<img class="front-card" src="assets/images/fiid-curry-card.png" alt="fiid-curry-card">
-<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
-</div>
-
-<div class="game-card" data-pouch="ragu">
-<img class="front-card" src="assets/images/fiid-ragu-card.png" alt="fiid-ragu-card">
-<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
-</div>
-
-<div class="game-card" data-pouch="ragu">
-<img class="front-card" src="assets/images/fiid-ragu-card.png" alt="fiid-ragu-card">
-<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
-</div>
-
-<div class="game-card" data-pouch="tagine">
-<img class="front-card" src="assets/images/fiid-tagine-card.png" alt="fiid-tagine-card">
-<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
-</div>
-
-<div class="game-card" data-pouch="tagine">
-<img class="front-card" src="assets/images/fiid-tagine-card.png" alt="fiid-tagine-card">
-<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
-</div>
-
-<div class="game-card" data-pouch="box">
-<img class="front-card" src="assets/images/fiid-box-card.png" alt="fiid-box-card">
-<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
-</div>
-
-<div class="game-card" data-pouch="box">
-<img class="front-card" src="assets/images/fiid-box-card.png" alt="fiid-box-card">
-<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
-</div>
-
-<div class="game-card" data-pouch="all">
-<img class="front-card" src="assets/images/fiid-all-card.png" alt="fiid-all-card">
-<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
-</div>
-
-<div class="game-card" data-pouch="all">
-<img class="front-card" src="assets/images/fiid-all-card.png" alt="fiid-all-card">
-<img class="back-card" src="assets/images/fiid-logo-card.png" alt="fiid-logo-card">
-</div>
-
-
-</section>
-<!-- END OF GAMEBOARD -->
-
-
-
-</div>
-<!-- END OF BG IMAGE -->
-
-<script src="script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  <h1 class="page-title">Find all the pairs to win a discount code!</h1>
+  <div class="overlay-text visible">
+    Click to Play!
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    GAME OVER
+    <span class="overlay-text-small">Click to Play Again</span>
+  </div>
+  <div id="win-text" class="overlay-text">
+    WINNER WINNER, FIID DINNER!
+    <span class="overlay-text-small">Click to Play Again</span>
+  </div>
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        Time:<span id="time-remaining">100</span>
+      </div>
+      <div class="game-info">
+        Flips:<span id="flips">0</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="fiid" src="assets/images/logo.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="assets/images/group.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="fiid" src="assets/images/logo.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="assets/images/group.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="fiid" src="assets/images/logo.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="assets/images/curry.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="fiid" src="assets/images/logo.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="assets/images/curry.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="fiid" src="assets/images/logo.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="assets/images/ragu.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="fiid" src="assets/images/logo.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="assets/images/ragu.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="fiid" src="assets/images/logo.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="assets/images/chilli.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="fiid" src="assets/images/logo.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="assets/images/chilli.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="fiid" src="assets/images/logo.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="assets/images/tagine.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="fiid" src="assets/images/logo.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="assets/images/tagine.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="fiid" src="assets/images/logo.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="assets/images/box.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="fiid" src="assets/images/logo.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="assets/images/box.png">
+      </div>
+    </div>
+  </div>
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
             integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
