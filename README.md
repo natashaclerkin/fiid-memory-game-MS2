@@ -88,7 +88,7 @@ In the construction of this project I have utilised the following languages, fra
 - **HTML5,** **CSS3** and **JavaScript** programming languages
 - Photoshop
 - https://audiotrimmer.com/
-
+- google fonts
 
 # Testing
 

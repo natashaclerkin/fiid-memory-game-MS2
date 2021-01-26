@@ -1,3 +1,7 @@
+/* || FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+
 * {
   box-sizing: border-box;
 }
@@ -14,8 +18,12 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
-	font-family: "Roboto", sans-serif;
+   font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+        letter-spacing: 1px;
+
 }
+
 .nav-item {
     padding-right: 1rem;
     padding-left: 1rem;
@@ -36,9 +44,11 @@ body {
 
 .page-title {
   color: #000;
-  font-family: serif;
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
+  font-weight: bold;
+      margin-top: 20px;
+
 }
 
 .game-info-container {
@@ -48,9 +58,8 @@ body {
 }
 
 .game-info {
-  font-family: serif;
   color: green;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .game-container {
@@ -104,17 +113,20 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 100;
-  color: green;
+  color: #fff;
+  font-weight: bold;
 }
 
 .overlay-text-small {
   font-size: .3em;
+  color: green;
 }
 
 .overlay-text.visible {
   display: flex;
   flex-direction: column;
   animation: overlay-grow 500ms forwards;
+  
 }
 
 @keyframes overlay-grow {
