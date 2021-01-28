@@ -124,6 +124,17 @@ class MixOrMatch {
         document.getElementById('win-text').classList.add('visible');
     }
 
+    
+
+   subscribeButton() {
+        document.getElementById("subscribe-submit").addEventListener("click", function () {
+            document.getElementById('email-subscribe').remove();
+            document.getElementById('email-text').innerText ="Thank you. You are now subscribed!"; // Hides the form and displays a confirmation message to the user
+        });
+    }
+
+    
+
 
     //Fisher–Yates shuffle implemented
     shuffleCards() {
@@ -158,10 +169,14 @@ function ready() {
     });
 }
 
+
+
+
 //Page Loading
 if(document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ready());
 } else {
     ready();
 }
+
 

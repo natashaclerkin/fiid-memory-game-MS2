@@ -164,6 +164,15 @@ margin-top: 5px;
   animation: overlay-grow 500ms forwards;
 }
 
+
+/*
+100% {
+    background-color: rgba(0, 0, 0, .95);
+    font-size: 5.5em;
+}*/
+
+
+
 @keyframes overlay-grow {
   from {
     background-color: rgba(0, 0, 0, 0);
@@ -234,20 +243,63 @@ margin-top: 5px;
     text-transform: uppercase;
 }
 
-.discount{
+#subscribe-submit {
     background-color: #28A745;
     color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.congrats{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#subscribe-submit:hover{
+color: white;
+    background-color: black;
+}
+
+#email {
+    font-size: 16px;
+        width: 280px;
+    margin-left: 5px;
+}
+
+
+#email-subscribe{
+padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.form-check-label {
+    color: black;
+    font-size: 9px;
+}
+
+.form-check {
+    position: relative;
+    display: block;
+    padding-left: 1.6rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
 }
 
 h3{
     font-size: 16px;
     text-align: center;
+    color: #000;
+}
+
+.congrats h3{
+    padding-bottom: 100px;
 }
 
 /* Solid Social Share Buttons */
 
 .social {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .btn-social,
@@ -274,5 +326,15 @@ h3{
 }
 
 .btn-em {
-  background-color: #000;
+  background-color: #3cd3d3;
 }
+
+.modal-body {
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.btn-dark {
+    width: 150px;
+}
+
