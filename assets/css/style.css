@@ -114,13 +114,11 @@ body {
   align-items: center;
   z-index: 100;
   color: #fff;
-     padding-left: 300px;
-      padding-right: 300px
-    
 }
 
 h2 {
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
 
@@ -136,7 +134,24 @@ margin-top: 5px;
 
 .btn-success{
     font-size: 21px;
+    animation: glowing 1.2s infinite;
 }
+
+/*https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html*/
+      @keyframes glowing {
+        0% {
+          background-color: #2ba805;
+          box-shadow: 0 0 5px #2ba805;
+        }
+        50% {
+          background-color: #49e819;
+          box-shadow: 0 0 20px #49e819;
+        }
+        100% {
+          background-color: #2ba805;
+          box-shadow: 0 0 5px #2ba805;
+        }
+      }
 
 .overlay-text-small {
   font-size: .3em;
@@ -217,4 +232,13 @@ margin-top: 5px;
     font-weight: bold;
     font-size: 26px;
     text-transform: uppercase;
+}
+
+.discount{
+    background-color: #28A745;
+    color: #fff;
+}
+
+h3{
+    font-size: 16px;
 }
