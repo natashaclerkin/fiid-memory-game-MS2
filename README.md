@@ -1,11 +1,11 @@
-# Fiid Memory Game
+# Fiid Match & Win Memory Game
 
 ## Code Institute MS2 Project in Interactive Frontend Development 
 The brief was to develop an interactive front-end site which responds to the users' actions, allowing them to actively engage with data, alter the way the site displays the information to achieve their preferred goals. This website is created for educational purposes.
 
-[View website in GitHub Pages.](https://natashaclerkin.github.io/XXXXXXXX/) 
+[View website in GitHub Pages.](https://natashaclerkin.github.io/fiid-memory-game-MS2/) 
 
-## [Fiid Memory Game](https://natashaclerkin.github.io/XXXXXXXX/) 
+## [Fiid Match & Win Memory Game](https://natashaclerkin.github.io/fiid-memory-game-MS2/) 
 
 Irish plant-based food B2C company, Fiid, are looking to further brand awareness and increase customer acquisition. They would like to drive sales by creating a timed Memory game for users to win discount code for their next online purchase. The user has to match 3 of each product type before the time runs out. If they are successful, they earn a discount code which will be valid for their next purchase. Users have the ability to share their result/game on social media. The target audience are health-conscious individuals, particularly the millennial bracket who like games and discounts. 
 
@@ -86,10 +86,49 @@ Due to time restraints, I was unable to include the following features but hope 
 
 In the construction of this project I have utilised the following languages, frameworks, libraries and tools:
 - **HTML5,** **CSS3** and **JavaScript** programming languages
-- Photoshop
-- https://audiotrimmer.com/
-- google fonts
-favicon
+- [Bootstrap v4.5.3](https://getbootstrap.com)
+    - The project used **Bootstrap** to simplify the website layout by integrating the Congrats Modal and Navbar. Also to provide overall responsive behaviour on all devices.
+- [GitPod](https://www.gitpod.io/)
+    - I used **GitPod** as the development environment for my website. I also used Git for Version Control in the project.
+- [GitHub](https://www.github.com/)
+    - The project used **GitHub** to host my code that was created and pushed from GitPod.
+- [Balsamiq](https://balsamiq.com/)
+    - I used **Balsamiq**, the rapid low-fidelity UI wireframing tool during the prototyping phase to structure the website and its content following best UX practices.
+- [Photoshop](https://www.photoshop.com)
+    - I created the background image using the image graphics editor **Photoshop** so each Fiid product is visually on screen for the duration of the game to further brand/product awareness.
+- [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)
+    - **Chrome Dev Tools** was used to consistently test the site and run reports from Lighthouse.
+- [Google Fonts](https://getbootstrap.com)
+    - **Google Fonts** was used to style the website fonts.
+- [Favicon.io](https://favicon.io/)
+    - **Favicon.io** was used to generate the favicons for the site.    
+
+- [TinyPNG](https://tinypng.com)
+    - The **TinyPNG** website was used to originally reduce the file size of my image files to use less bandwidth and allow the website to load faster.
+- [Freeformatter CSS Beautify](https://www.freeformatter.com/css-beautifier.html)
+    - I used **CSS Beautify** to format and automatically indent my CSS file.
+- [Freeformatter HTML Formatter](https://www.freeformatter.com/html-formatter.html)
+    - The **HTML Formatter** was used to format the HTML document.    
+- [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln)
+    - I regularly used the **Unicorn Revealer** Chrome extension to inspect and locate where overflow was located making the debugging process a lot easier. 
+- [Autoprefixer](https://autoprefixer.github.io)
+    - The project used PostCSS plugin **Autoprefixer** which parsed my CSS and added vendor prefixes to allow cross-browser compatibility and support.
+- [Color Contrast Accessibility Validator](https://color.a11y.com/)
+    - The **Color Contrast Accessibility Validator** was used to test for colour contrast on the project.
+- [W3C Markup Validation Service](https://validator.w3.org/)
+    - The **W3C Markup Validation Service** checked the markup validity of Web documents in HTML.
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+    - **W3C CSS Validation Service** was used to check the validity of my CSS in the project.
+- [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
+    - I used **WAVE** to make my site more accessible to individuals with disabilities by detecting any potential issues.
+- [Optimizilla Image Compressor](https://imagecompressor.com/)
+    - **Optimizilla** was used to further compress the images with custom compression options.
+    ![alt text](assets/wireframes/optimizilla.PNG "Optimizilla Image Compressor")
+
+
+
+
+
 
 # Testing
 
@@ -103,7 +142,24 @@ favicon
 
 
 # Deployment
+This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. For the site to deploy correctly on GitHub pages, the landing page must be named index.html.
 
+To run locally, you can clone this repository directly into the editor of your choice by pasting git clone https://natashaclerkin.github.io/fiid-memory-game-MS2 into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
+
+
+My project was developed using the IDE, Gitpod. I deployed my website from the GitHub repository to GitHub Pages using the following steps:
+
+1. I selected the Settings tab in my GitHub repository.
+![alt text](assets/wireframes/githubpages-1.png "GitHub Pages Deployment Instructions")
+
+2. I located the GitHub Pages section and chose the Master branch as the source to enable GitHub Pages.
+![alt text](assets/wireframes/githubpages-2.png "GitHub Pages Deployment Instructions")
+
+3. Once I saved the Master Branch as the source, the page refreshed and I located the URL to the deployed website.
+![alt text](assets/wireframes/githubpages-3.png "GitHub Pages Deployment Instructions")
+
+4. I then followed the link to observe and verify the published GitHub page. 
+![alt text](assets/wireframes/githubpages-4.png "GitHub Pages Deployment Instructions")
 
 
 # Credits
