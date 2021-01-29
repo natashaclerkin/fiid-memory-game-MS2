@@ -89,6 +89,7 @@ In the construction of this project I have utilised the following languages, fra
 - Photoshop
 - https://audiotrimmer.com/
 - google fonts
+favicon
 
 # Testing
 

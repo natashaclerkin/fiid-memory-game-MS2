@@ -154,7 +154,7 @@ margin-top: 5px;
       }
 
 .overlay-text-small {
-  font-size: .3em;
+  font-size: 1em;
   color: green;
 }
 
@@ -164,6 +164,11 @@ margin-top: 5px;
   animation: overlay-grow 500ms forwards;
 }
 
+h4{
+    display: flex;
+    flex-direction: column;
+        font-size: 4.5rem;
+}
 
 /*
 100% {
