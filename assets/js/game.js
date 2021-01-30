@@ -154,7 +154,7 @@ class MixOrMatch {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new MixOrMatch(30, cards);
+    let game = new MixOrMatch(120, cards);
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
