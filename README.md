@@ -67,8 +67,8 @@ To achieve the strategic goals, I wanted to include the following features in th
 The user will be presented with a short, simple user-friendly game leaving them with an enjoyable experience, a lasting memory of the 4 products and hopefully a discount to use at the checkout.
  
 ### Skeleton
-- [Wireframes](assets/wireframes/wireframes.pdf "Fiid Wireframes"): Website contains
-**Please note the finalised website contains slight variations to the original wireframe**
+- [Wireframes](assets/wireframes/wireframes.pdf "Fiid Wireframes"): The project contains the instructions screen, the game screen, gameover screen and win screen.
+**Please note the finalised project contains slight variations to the original wireframe**
 
 ### Surface 
 As a B2C company, sales are emotionally driven and often as an impulse buy. Branding is a huge factor and emotional triggers lead a customer to purchase a product. It was important to build the memory game on a page that reflected the brand and their product offering. The monochrome colour scheme was implemented along with pops of green to reflect the healthy and fresh products.
@@ -150,16 +150,16 @@ To run locally, you can clone this repository directly into the editor of your c
 My project was developed using the IDE, Gitpod. I deployed my website from the GitHub repository to GitHub Pages using the following steps:
 
 1. I selected the Settings tab in my GitHub repository.
-![alt text](assets/wireframes/githubpages-1.png "GitHub Pages Deployment Instructions")
+![alt text](assets/wireframes/githubpages-1.PNG "GitHub Pages Deployment Instructions")
 
 2. I located the GitHub Pages section and chose the Master branch as the source to enable GitHub Pages.
-![alt text](assets/wireframes/githubpages-2.png "GitHub Pages Deployment Instructions")
+![alt text](assets/wireframes/githubpages-2.PNG "GitHub Pages Deployment Instructions")
 
 3. Once I saved the Master Branch as the source, the page refreshed and I located the URL to the deployed website.
-![alt text](assets/wireframes/githubpages-3.png "GitHub Pages Deployment Instructions")
+![alt text](assets/wireframes/githubpages-3.PNG "GitHub Pages Deployment Instructions")
 
 4. I then followed the link to observe and verify the published GitHub page. 
-![alt text](assets/wireframes/githubpages-4.png "GitHub Pages Deployment Instructions")
+![alt text](assets/wireframes/githubpages-4.PNG "GitHub Pages Deployment Instructions")
 
 
 # Credits
