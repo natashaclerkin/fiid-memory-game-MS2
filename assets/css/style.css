@@ -338,6 +338,13 @@ h3{
   background-color: #3cd3d3;
 }
 
+.modal{
+    padding-right: 17px; 
+    display: block;
+}
+
+
+
 .modal-body {
   max-height: 75vh;
   overflow-y: auto;

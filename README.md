@@ -7,11 +7,11 @@ The brief was to develop an interactive front-end site which responds to the use
 
 ## [Fiid Match & Win Memory Game](https://natashaclerkin.github.io/fiid-memory-game-MS2/) 
 
-Irish plant-based food B2C company, Fiid, are looking to further brand awareness and increase customer acquisition. They would like to drive sales by creating a timed Memory game for users to win discount code for their next online purchase. The user has to match 3 of each product type before the time runs out. If they are successful, they earn a discount code which will be valid for their next purchase. Users have the ability to share their result/game on social media. The target audience are health-conscious individuals, particularly the millennial bracket who like games and discounts. 
+Irish plant-based food B2C company, Fiid, are looking to further brand awareness and increase customer acquisition. They would like to drive sales by creating a timed memory game for users to win discount code for their next online purchase. The user has to match two of each product type before the time runs out. If they are successful, they are able to subscribe to earn a discount code which will be valid for their next purchase. Users have the ability to share the game with their followers on social media. The target audience are health-conscious individuals, particularly the millennial bracket who like games and discounts. 
 
-The primary goal of the main Fiid website is to inform and direct users to place an order. I wanted to implement a page on their website that featured a short sign up form to the memory game, links to their social media channels and most importantly the main online store. This would allow users to learn more about the products, place an order or share the result from the game to their followers on their own channels.
+The primary goal of the main Fiid website is to inform and direct users to place an order. I wanted to create an experience that integrates with their main website. This would include instructions on how the game works, how to obtain the discount code through a short signup form and how they can spread the word through social media. There would also be links to the company's social media channels and most importantly the main online store. This would allow users to learn more about the products, place an order or share the game with their followers on their own channels.
 
-The opportunity to win a discount code incentivizes participation aswell as increasing brand recognition and follower engagement. In order to enter the prize draw, the user has to register through an entry form for lead generation and simultaneously allows the user to sign up to the newsletter. The concept is to offer a discount to all registered users in order to convert them into paying customers.
+The opportunity to win a discount code incentivizes participation aswell as increasing brand recognition and follower engagement. In order to obtain the discount code, the user has to register through an entry form for lead generation and simultaneously allows the user to sign up to the newsletter. The concept is to offer a discount to all registered users in order to convert them into paying customers.
 
 
 **The business goals of this website are:**
@@ -61,7 +61,7 @@ To achieve the strategic goals, I wanted to include the following features in th
 
 - Simple and short signup form
 - Nav bar with minimal content - i.e. just social media links and link to main site
-- Simplistic timed memory game using JavaScript - including countdown and match counter
+- Simplistic timed memory game using JavaScript - including countdown and flip counter
 
 ### Structure 
 The user will be presented with a short, simple user-friendly game leaving them with an enjoyable experience, a lasting memory of the 4 products and hopefully a discount to use at the checkout.
