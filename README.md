@@ -74,6 +74,7 @@ The user will be presented with a short, simple user-friendly game leaving them 
 As a B2C company, sales are emotionally driven and often as an impulse buy. Branding is a huge factor and emotional triggers lead a customer to purchase a product. It was important to build the memory game on a page that reflected the brand and their product offering. The monochrome colour scheme was implemented along with pops of green to reflect the healthy and fresh products.
 The banner assets of fresh produce and company typography was also implemented to integrate the game page as part of the brand and propel the user towards the shop after completion.
 
+![alt text](assets/wireframes/fiid-color-palette.PNG "Fiid Color Palette")
 
 # Features
 
@@ -94,6 +95,8 @@ In the construction of this project I have utilised the following languages, fra
     - The project used **GitHub** to host my code that was created and pushed from GitPod.
 - [Balsamiq](https://balsamiq.com/)
     - I used **Balsamiq**, the rapid low-fidelity UI wireframing tool during the prototyping phase to structure the website and its content following best UX practices.
+- [Color Hex](https://www.color-hex.com/)
+    - I created the color palette for my project using the theme colours of the main Fiid website and **Color Hex** to help structure the UI for the game. 
 - [Photoshop](https://www.photoshop.com)
     - I created the background image using the image graphics editor **Photoshop** so each Fiid product is visually on screen for the duration of the game to further brand/product awareness.
 - [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)
@@ -102,13 +105,12 @@ In the construction of this project I have utilised the following languages, fra
     - **Google Fonts** was used to style the website fonts.
 - [Favicon.io](https://favicon.io/)
     - **Favicon.io** was used to generate the favicons for the site.    
-
-- [TinyPNG](https://tinypng.com)
-    - The **TinyPNG** website was used to originally reduce the file size of my image files to use less bandwidth and allow the website to load faster.
 - [Freeformatter CSS Beautify](https://www.freeformatter.com/css-beautifier.html)
     - I used **CSS Beautify** to format and automatically indent my CSS file.
 - [Freeformatter HTML Formatter](https://www.freeformatter.com/html-formatter.html)
-    - The **HTML Formatter** was used to format the HTML document.    
+    - The **HTML Formatter** was used to format the HTML document.  
+- [Freeformatter JS Formatter](https://www.freeformatter.com/javascript-beautifier.html)
+    - The **JavaScript Formatter** was used to format the JS file.      
 - [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln)
     - I regularly used the **Unicorn Revealer** Chrome extension to inspect and locate where overflow was located making the debugging process a lot easier. 
 - [Autoprefixer](https://autoprefixer.github.io)
@@ -119,13 +121,10 @@ In the construction of this project I have utilised the following languages, fra
     - The **W3C Markup Validation Service** checked the markup validity of Web documents in HTML.
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
     - **W3C CSS Validation Service** was used to check the validity of my CSS in the project.
+- [JS Hint Validator](https://jshint.com/)
+    - **JS Hint** was used to analyze and ensure the source code complies with coding rules. 
 - [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
     - I used **WAVE** to make my site more accessible to individuals with disabilities by detecting any potential issues.
-- [Optimizilla Image Compressor](https://imagecompressor.com/)
-    - **Optimizilla** was used to further compress the images with custom compression options.
-    ![alt text](assets/wireframes/optimizilla.PNG "Optimizilla Image Compressor")
-
-
 
 
 
@@ -138,6 +137,42 @@ In the construction of this project I have utilised the following languages, fra
 
 
 ## Validation
+I used the [W3C Markup Validation Service](https://validator.w3.org/) to check the Markup and [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to check the CSS validity and [JS Hint Validator](https://jshint.com/) to check the JS rules of the project. After fixing the errors on all testing sites, the sites eventually passed validation.
+
+![alt text](assets/wireframes/html-validation.PNG "HTML Validation Final Results")
+
+![alt text](assets/wireframes/css-validation.PNG "CSS Validation Final Results")
+
+![alt text](assets/wireframes/js-validation.PNG "JS Validation Final Results")
+
+The [Color Contrast Accessibility Validator](https://color.a11y.com/) was used to test for colour contrast on the project.
+
+![alt text](assets/wireframes/color-validation-1.PNG "Color Validation Initial Results")
+
+I found one of the original green shades used for the buttons wasn't working from an accessibility standpoint. I used the contrast testing feature to choose a hex color that would pass the validation tests.
+
+![alt text](assets/wireframes/color-validation-2.PNG "Color Validation Testing")
+
+When I decided on the final shade, I re-ran the tests confirming no further colour contasting issues to be found and the overall site complies with accessibility standards.
+
+![alt text](assets/wireframes/color-validation-3.PNG "Color Validation Final Results")
+
+
+In order to have optimal user experience, the site needs to be accessible. I would continually run the URL through **WAVE Web Accessibility Evaluation Tool** to highlight potential issues. I continued until no further errors or alerts were given.
+
+![alt text](assets/wireframes/wave-validation-1.PNG "Wave Accessibility Test results")
+
+I constantly tested the code in [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools) and often ran Lighthouse audits to identify and fix issues that affected the site's performance, accessibility and user experience. 
+
+![alt text](assets/wireframes/lighthouse-audit-1.PNG "Lighthouse Testing Initial Results")
+
+This highlighted areas that require improvement for validation. For example, Accessibility issues pointed to areas such as inadequate color contrast ratio which I tested and fixed in **Color Contrast Accessibility Validator**.
+Also, a Cross-Origin security issue pertaining to Best Practices was simply resolved via adding `rel= noreferrer` to external links. I also ensured all the necessary aria labels, alt tags etc were present to conform to best practices. 
+Through constant testing, I was able to achieve almost 100% on all metrics for optimum Performance, Accessibility, SEO and Best Practices.  
+
+![alt text](assets/wireframes/lighthouse-audit-2.PNG "Lighthouse Testing Final Run Results")
+
+I asked my family, friends and fellow students to test their site on different devices to locate potential bugs. The website was tested over multiple devices (iPhone 5, 6, 11: Safari and Chrome, iPad, Samsung Galaxy) and many browsers (Chrome, Firefox, Safari and Edge) to guarantee responsive behaviour and compatibility.  
 
 
 
@@ -163,9 +198,6 @@ My project was developed using the IDE, Gitpod. I deployed my website from the G
 
 
 # Credits
-
-### Content
-The text for X was adapted from:
  
 ### Media
  The images used in this site were obtained from the following sources:
@@ -180,4 +212,7 @@ The text for X was adapted from:
 I took inspiration from the following sources however I did implement my own custom code with each snippet also:
 https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html
      
+
+Fiid
+
 Finally, I would like to thank my mentor Guido Cecilio for his overall support throughout the project.
