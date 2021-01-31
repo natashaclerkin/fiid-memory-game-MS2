@@ -1,8 +1,8 @@
 /* || FONTS */
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
-
-
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -14,32 +14,31 @@ body {
   margin: 0;
   background-image: url("../images/memorygame-background.png");
   background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-   font-family: 'Source Sans Pro', sans-serif;
-    text-transform: uppercase;
-        letter-spacing: 1px;
-
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .nav-item {
-    padding-right: 1rem;
-    padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
-.navbar{
-	padding: 0;
+.navbar {
+  padding: 0;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
+  color: #fff;
 }
 
 .navbar-dark .navbar-toggler {
-    color: #fff;
-    border-color: #fff;
+  color: #fff;
+  border-color: #fff;
 }
 
 .page-title {
@@ -47,13 +46,16 @@ body {
   text-align: center;
   font-size: 2em;
   font-weight: bold;
-      margin-top: 20px;
-
+  margin-top: 20px;
 }
 
 .game-info-container {
   grid-column: 1 / -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -63,11 +65,16 @@ body {
 }
 
 .game-container {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: auto 10px auto 10px auto 10px auto;
   grid-template-columns: repeat(4, auto);
   grid-gap: 10px;
-  margin:0px;
+  margin: 0px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-perspective: 500px;
   perspective: 500px;
 }
 
@@ -77,29 +84,42 @@ body {
   width: 100px;
 }
 
-
 .card-face {
   position: absolute;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-style: solid;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  -o-transition: transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
 .card.visible .card-back {
+  -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
 
 .card.visible .card-front {
+  -webkit-transform: rotateY(0);
   transform: rotateY(0)
 }
 
 .card.matched .card-value {
+  -webkit-animation: dance 1s linear infinite 500ms;
   animation: dance 1s linear infinite 500ms;
 }
 
@@ -110,79 +130,120 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   z-index: 100;
   color: #fff;
 }
 
 h2 {
-    font-size: 2.35rem;
-    border: 2px solid #fff;
-    font-weight: bold;
-        background-color: #000;
-
+  font-size: 2.35rem;
+  border: 2px solid #fff;
+  font-weight: bold;
+  background-color: #000;
 }
 
-
-.overlay-text, li {
-margin-top: 5px;
-
+.overlay-text,
+li {
+  margin-top: 5px;
 }
 
-.instruction-list{
-    text-transform: lowercase;
+.instruction-list {
+  text-transform: lowercase;
 }
 
-
-.btn-success{
-    font-size: 21px;
-    animation: glowing 1.2s infinite;
+.btn-success {
+  font-size: 21px;
+  -webkit-animation: glowing 1.4s infinite;
+  animation: glowing 1.4s infinite;
+  background-color: #018920;
+  border-color: #018920;
 }
+
 
 /*https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html*/
-      @keyframes glowing {
-        0% {
-          background-color: #018920;
-          box-shadow: 0 0 5px #018920;
-        }
-        50% {
-          background-color: #49e819;
-          box-shadow: 0 0 20px #49e819;
-        }
-        100% {
-          background-color: #2ba805;
-          box-shadow: 0 0 5px #2ba805;
-        }
-      }
+
+@-webkit-keyframes glowing {
+  0% {
+    background-color: #018920;
+    -webkit-box-shadow: 0 0 5px #018920;
+    box-shadow: 0 0 5px #018920;
+  }
+  50% {
+    background-color: #49e819;
+    -webkit-box-shadow: 0 0 20px #49e819;
+    box-shadow: 0 0 20px #49e819;
+  }
+  100% {
+    background-color: #018920;
+    -webkit-box-shadow: 0 0 5px #018920;
+    box-shadow: 0 0 5px #018920;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #018920;
+    -webkit-box-shadow: 0 0 5px #018920;
+    box-shadow: 0 0 5px #018920;
+  }
+  50% {
+    background-color: #49e819;
+    -webkit-box-shadow: 0 0 20px #49e819;
+    box-shadow: 0 0 20px #49e819;
+  }
+  100% {
+    background-color: #018920;
+    -webkit-box-shadow: 0 0 5px #018920;
+    box-shadow: 0 0 5px #018920;
+  }
+}
 
 .overlay-text-small {
   font-size: 1em;
   color: green;
-      text-align: center;
+  text-align: center;
 }
 
 .overlay-text.visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-animation: overlay-grow 500ms forwards;
   animation: overlay-grow 500ms forwards;
 }
 
-h4{
-    display: flex;
-    flex-direction: column;
-        font-size: 4.5rem;
-            text-align: center;
-                margin-bottom: 30px;
+h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 4.5rem;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-/*
-100% {
+@-webkit-keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
     background-color: rgba(0, 0, 0, .95);
-    font-size: 5.5em;
-}*/
-
-
+    font-size: 1.5em;
+  }
+}
 
 @keyframes overlay-grow {
   from {
@@ -195,14 +256,34 @@ h4{
   }
 }
 
-@keyframes dance {
-  0%, 100%  {
+@-webkit-keyframes dance {
+  0%,
+  100% {
+    -webkit-transform: rotate(0);
     transform: rotate(0);
   }
   25% {
+    -webkit-transform: rotate(-30deg);
     transform: rotate(-30deg);
   }
   75% {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes dance {
+  0%,
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  25% {
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+  75% {
+    -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
   }
 }
@@ -215,96 +296,113 @@ h4{
 .card-front {
   background-color: #fff;
   border-color: #000;
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
 .card-value {
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
+  transition: -webkit-transform 100ms ease-in-out;
+  -o-transition: transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
+  -webkit-transform: scale(.9);
+  -ms-transform: scale(.9);
   transform: scale(.9);
 }
 
 .card-front:hover .card-value {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
 }
 
-
 .fiid {
+  -ms-flex-item-align: start;
   align-self: flex-start;
 }
 
 .card-back:hover .fiid {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
   transform: translateY(0)
 }
 
 @media (max-width: 600px) {
   .game-container {
+    -ms-grid-columns: auto 10px auto;
     grid-template-columns: repeat(2, auto);
   }
-
   .game-info-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 }
 
 .instruction {
-	color: #28A745;
-    font-weight: bold;
-    font-size: 26px;
-    text-transform: uppercase;
+  color: #28A745;
+  font-weight: bold;
+  font-size: 26px;
+  text-transform: uppercase;
 }
 
 #subscribe-submit {
-    background-color: #28A745;
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-.congrats{
-    font-size: 26px;
-    font-weight: bold;
+  background-color: #28A745;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-#subscribe-submit:hover{
-color: white;
-    background-color: black;
+.congrats {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#subscribe-submit:hover {
+  color: white;
+  background-color: black;
 }
 
 #email {
-    font-size: 16px;
-        width: 280px;
-    margin-left: 5px;
+  font-size: 16px;
+  width: 280px;
+  margin-left: 5px;
 }
 
-
-#email-subscribe{
-padding-top: 10px;
-    padding-bottom: 20px;
+#email-subscribe {
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .form-check-label {
-    color: black;
-    font-size: 9px;
+  color: black;
+  font-size: 9px;
 }
 
 .form-check {
-    position: relative;
-    display: block;
-    padding-left: 1.6rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
+  position: relative;
+  display: block;
+  padding-left: 1.6rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
 }
 
-h3{
-    font-size: 16px;
-    text-align: center;
-    color: #000;
+h3 {
+  font-size: 16px;
+  text-align: center;
+  color: #000;
 }
 
-.congrats h3{
-    padding-bottom: 100px;
+.congrats h3 {
+  padding-bottom: 100px;
 }
+
 
 /* Solid Social Share Buttons */
 
@@ -320,12 +418,14 @@ h3{
 .btn-social:active {
   color: #ffffff;
   text-decoration: none;
+  -webkit-transition: opacity .15s ease-in-out;
+  -o-transition: opacity .15s ease-in-out;
   transition: opacity .15s ease-in-out;
 }
 
 .btn-social:hover,
 .btn-social:active {
- opacity: .75;
+  opacity: .75;
 }
 
 .btn-fb {
@@ -340,12 +440,10 @@ h3{
   background-color: #3cd3d3;
 }
 
-.modal{
-    padding-right: 17px; 
-    display: block;
+.modal {
+  padding-right: 17px;
+  display: block;
 }
-
-
 
 .modal-body {
   max-height: 75vh;
@@ -353,6 +451,5 @@ h3{
 }
 
 .btn-dark {
-    width: 150px;
+  width: 150px;
 }
-
