@@ -52,17 +52,17 @@ body {
 
 .navbar-nav{
  margin-right: 10px;
- margin-bottom: 10px;
 }
 
 .navbar-toggler:hover {
     background-color: green;
 }
 
+
 .navbar-dark .navbar-toggler {
   color: #fff;
   border-color: #fff;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 .page-title {
@@ -171,13 +171,11 @@ h2 {
   background-color: #000;
 }
 
-.overlay-text,
-li {
-  margin-top: 5px;
-}
-
 .instruction-list {
   text-transform: lowercase;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .btn-success {
@@ -352,11 +350,42 @@ h3 {
   transform: translateY(0)
 }
 
+/* Medium devices (tablets, 768px and up) */
+
+@media screen and (min-width: 768px) {
+	 body .instruction-list > li {
+		font-size: 20px;
+    }
+    body .instruction {
+        font-size: 24px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+	 body .instruction-list > li {
+		font-size: 24px
+    }
+   body .instruction {
+        font-size: 28px;
+    }
+}
+
+
 @media (max-width: 600px) {
   .game-container {
     -ms-grid-columns: auto 10px auto;
     grid-template-columns: repeat(3, auto);
   }
+}
+
+  @media (max-width: 991px) {
+  .navbar-collapse{
+    padding-bottom: 10px; 
+}
+
   .game-info-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -369,7 +398,7 @@ h3 {
 .instruction {
   color: #28A745;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
@@ -393,12 +422,9 @@ h3 {
 
 #email {
   font-size: 16px;
-  width: 280px;
-  margin-left: 5px;
 }
 
 #email-subscribe {
-  padding-top: 10px;
   padding-bottom: 20px;
 }
 
@@ -410,9 +436,6 @@ h3 {
 .form-check {
   position: relative;
   display: block;
-  padding-left: 1.6rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
 }
 
 h4 {
@@ -463,13 +486,13 @@ h4 {
 }
 
 .modal {
-  padding-right: 17px;
   display: block;
 }
 
 .modal-body {
   max-height: 75vh;
   overflow-y: auto;
+  padding: 0rem;
 }
 
 .btn-dark {
