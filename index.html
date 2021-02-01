@@ -79,78 +79,11 @@
         <button type="button" class="btn btn-success btn-rounded" data-dismiss="modal">CLICK TO TRY AGAIN</button>
         <!--  SMALL TEXT <span class="overlay-text-small">Click to Try Again</span>-->
     </div>
-    <div id="win-text" class="overlay-text">
+    <!-- <div id="win-text" class="overlay-text"> -->
         <!--  WINNER WINNER, FIID DINNER!-->
-        <div class="modal fade show" id="elegantModalForm" tabindex="-1" data-toggle="modal" data-backdrop="static"
-            data-keyboard="false" role="dialog" aria-labelledby="myModalLabel" aria-modal="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <!--Content-->
-                <div class="modal-content form-elegant">
-                    <!--Header-->
-                    <img src="assets/images/fiid-congrats.jpg" alt="Fiid pouches">
-                    <div class="modal-header text-center">
-                        <h4 class="modal-title text-dark w-100" id="myModalLabel">
-                            <span class="congrats">Winner Winner, FIID Dinner.</span><br>
-                            Simply subscribe to Our Newsletter to Receive discount for your next online purchase!
-                        </h4>
-                    </div>
-                    <!--	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-              </button>-->
-                    <!--Body-->
-                    <div class="modal-body mx-4">
-                        <div id="subscribe">
-                            <!-- <span id="email-text">Subscribe to our newsletter to be the first to hear about new game releases!</span>-->
-                            <div class="container-fluid">
-                                <div class="row justify-content-center">
-                                    <div class="col-sm-12 col-md-10">
-                                        <form id="email-subscribe">
-                                            <div class="form-group">
-                                                <label for="email"></label>
-                                                <input type="email" id="email" class="form-control" name="email"
-                                                    placeholder="Email" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="button" id="subscribe-submit" class="form-control"
-                                                    value="Subscribe!" />
-                                            </div>
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                                <label class="form-check-label" for="dropdownCheck">
-                                                    Yes I would like to receive updates and special offers from Fiid and
-                                                    can Unsubscribe at any time.
-                                                </label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="social">
-                            <a class="btn btn-sm btn-social btn-fb"
-                                href="https://www.facebook.com/sharer/sharer.php?u=https://natashaclerkin.github.io/fiid-memory-game-MS2"
-                                rel="noreferrer" target="_blank" title="Share this post on Facebook">
-                                <i class="fab fa-facebook-square"></i> Share
-                            </a>
-                            <a class="btn btn-sm btn-social btn-tw"
-                                href="https://twitter.com/intent/tweet?text=PAGE_TITLE&amp;url=https://natashaclerkin.github.io/fiid-memory-game-MS2"
-                                rel="noreferrer" target="_blank" title="Share this post on Twitter">
-                                <i class="fab fa-twitter"></i> Tweet
-                            </a>
-                            <a class="btn btn-sm btn-social btn-em"
-                                href="mailto:?subject=I-wanted-you-to-see-this-site&amp;body=Check-out-this-site-https://natashaclerkin.github.io/fiid-memory-game-MS2/"
-                                title="Share by Email" rel="noreferrer" target="_blank">
-                                <i class="fas fa-envelope"></i> Share
-                            </a>
-                            <a class="btn btn-sm btn-social btn-dark"
-                                href="https://www.eatfiid.com/collections/all-products">SHOP FIID</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!--<span class="overlay-text-small">Click to Play Again</span>-->
-    </div>
+    <!-- </div> -->
     <div class="game-container">
         <div class="game-info-container">
             <div class="game-info">
@@ -259,6 +192,78 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" style="display: none;" id="elegantModalForm" tabindex="-1" data-backdrop="static" data-keyboard="false"
+        role="dialog" aria-labelledby="myModalLabel" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <!--Content-->
+            <div class="modal-content form-elegant">
+                <!--Header-->
+                <img src="assets/images/fiid-congrats.jpg" alt="Fiid pouches">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title text-dark w-100" id="myModalLabel">
+                        <span class="congrats">Winner Winner, FIID Dinner.</span><br>
+                        Simply subscribe to Our Newsletter to Receive discount for your next online purchase!
+                    </h4>
+                </div>
+                <!--	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+              </button>-->
+                <!--Body-->
+                <div class="modal-body mx-4">
+                    <div id="subscribe">
+                        <!-- <span id="email-text">Subscribe to our newsletter to be the first to hear about new game releases!</span>-->
+                        <div class="container-fluid">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-12 col-md-10">
+                                    <form id="email-subscribe">
+                                        <div class="form-group">
+                                            <label for="email"></label>
+                                            <input type="email" id="email" class="form-control" name="email"
+                                                placeholder="Email" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="button" id="subscribe-submit" class="form-control"
+                                                value="Subscribe!" />
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                            <label class="form-check-label" for="dropdownCheck">
+                                                Yes I would like to receive updates and special offers from Fiid and
+                                                can Unsubscribe at any time.
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <a class="btn btn-sm btn-social btn-fb"
+                            href="https://www.facebook.com/sharer/sharer.php?u=https://natashaclerkin.github.io/fiid-memory-game-MS2"
+                            rel="noreferrer" target="_blank" title="Share this post on Facebook">
+                            <i class="fab fa-facebook-square"></i> Share
+                        </a>
+                        <a class="btn btn-sm btn-social btn-tw"
+                            href="https://twitter.com/intent/tweet?text=PAGE_TITLE&amp;url=https://natashaclerkin.github.io/fiid-memory-game-MS2"
+                            rel="noreferrer" target="_blank" title="Share this post on Twitter">
+                            <i class="fab fa-twitter"></i> Tweet
+                        </a>
+                        <a class="btn btn-sm btn-social btn-em"
+                            href="mailto:?subject=I-wanted-you-to-see-this-site&amp;body=Check-out-this-site-https://natashaclerkin.github.io/fiid-memory-game-MS2/"
+                            title="Share by Email" rel="noreferrer" target="_blank">
+                            <i class="fas fa-envelope"></i> Share
+                        </a>
+                        <a class="btn btn-sm btn-social btn-dark"
+                            href="https://www.eatfiid.com/collections/all-products">SHOP FIID</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- END OF GAMEBOARD -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

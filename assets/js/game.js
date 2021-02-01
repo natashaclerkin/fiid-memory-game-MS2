@@ -118,12 +118,13 @@ class MixOrMatch {
     this.audioController.gameOver();
     document.getElementById('game-over-text').classList.add('visible');
   }
+  
   win() {
     clearInterval(this.countDown);
     this.audioController.win();
-    document.getElementById('win-text').classList.add('visible');
+    // document.getElementById('win-text').classList.add('visible');
+    $('#elegantModalForm').modal('show');
   }
-
 
   subscribeButton() {
     document.getElementById("subscribe-submit").addEventListener("click", function () {
@@ -165,12 +166,16 @@ function ready() {
       game.flipCard(card);
     });
   });
+
+  $('#elegantModalForm').modal({ backdrop: 'static', keyboard: false, show: false });
 }
 
 
 //Page Loading
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', ready());
-} else {
-  ready();
-}
+// if (document.readyState === 'loading') {
+//   document.addEventListener('DOMContentLoaded', ready());
+// } else {
+//   ready();
+// }
+
+$(document).ready(ready);
