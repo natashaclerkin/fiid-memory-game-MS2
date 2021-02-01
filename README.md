@@ -5,6 +5,8 @@ The brief was to develop an interactive front-end site which responds to the use
 
 [View website in GitHub Pages.](https://natashaclerkin.github.io/fiid-memory-game-MS2/) 
 
+AM I RESPONSIVE IMAGE
+
 ## [Fiid Match & Win Memory Game](https://natashaclerkin.github.io/fiid-memory-game-MS2/) 
 
 Irish plant-based food B2C company, Fiid, are looking to further brand awareness and increase customer acquisition. They would like to drive sales by creating a timed memory game for users to win discount code for their next online purchase. The user has to match two of each product type before the time runs out. If they are successful, they are able to subscribe to earn a discount code which will be valid for their next purchase. Users have the ability to share the game with their followers on social media. The target audience are health-conscious individuals, particularly the millennial bracket who like games and discounts. 
