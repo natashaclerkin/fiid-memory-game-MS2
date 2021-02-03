@@ -41,7 +41,9 @@ class MixOrMatch {
     this.timer = document.getElementById('time-remaining');
     this.ticker = document.getElementById('flips');
     this.audioController = new AudioController();
+    this.addEventListener();
   }
+
   startGame() {
     this.cardToCheck = null;
     this.totalClicks = 0;
@@ -58,12 +60,18 @@ class MixOrMatch {
     this.timer.innerText = this.timeRemaining;
     this.ticker.innerText = this.totalClicks;
   }
+
   hideCards() {
     this.cardsArray.forEach(card => {
       card.classList.remove('visible');
       card.classList.remove('matched');
     });
   }
+
+  /**
+   * 
+   * @param {*} card 
+   */
   flipCard(card) {
     if (this.canFlipCard(card)) {
       this.audioController.flip();
@@ -77,6 +85,7 @@ class MixOrMatch {
         this.cardToCheck = card;
     }
   }
+
   checkForCardMatch(card) {
     if (this.getCardType(card) === this.getCardType(this.cardToCheck))
       this.cardMatch(card, this.cardToCheck);
@@ -85,6 +94,7 @@ class MixOrMatch {
 
     this.cardToCheck = null;
   }
+
   cardMatch(card1, card2) {
     this.matchedCards.push(card1);
     this.matchedCards.push(card2);
@@ -94,6 +104,7 @@ class MixOrMatch {
     if (this.matchedCards.length === this.cardsArray.length)
       this.win();
   }
+
   cardMisMatch(card1, card2) {
     this.busy = true;
     setTimeout(() => {
@@ -102,9 +113,11 @@ class MixOrMatch {
       this.busy = false;
     }, 1000);
   }
+
   getCardType(card) {
     return card.getElementsByClassName('card-value')[0].src;
   }
+
   startCountDown() {
     return setInterval(() => {
       this.timeRemaining--;
@@ -126,12 +139,38 @@ class MixOrMatch {
     $('#elegantModalForm').modal('show');
   }
 
- // subscribeButton() {
-     //     document.getElementById("subscribe-submit").addEventListener("click", function () {
-         //     document.getElementById('email-subscribe').remove();
-             // document.getElementById('email-text').innerText ="Yay, you subscribed! Go check your email and get your discount!"; // Hides the form and displays a confirmation message to the user
-       //   });
-     // }
+  addEventListener() {
+    document.getElementById("subscribe-submit").addEventListener("click", () => {
+        const subscribeEl = document.getElementById("dynamic-content-a");
+        const messageSectionEl = document.getElementById("dynamic-content-b");
+
+        const subscribeButton = document.getElementById("subscribe-submit");
+        subscribeButton.firstElementChild.classList.remove("d-none");
+        subscribeButton.setAttribute("disabled", "disabled");
+
+        setTimeout(() => {
+            subscribeEl.classList.add('d-none');
+            messageSectionEl.classList.remove('d-none');
+        }, 5000);
+
+        return false;
+    });
+  }
+
+        //     let f = document.createElement("form");
+        //     f.setAttribute('method',"post");
+        //     f.setAttribute('action',"submit.php");
+        //     let i = document.createElement("input");
+        //     i.setAttribute('type',"text");
+        //     i.setAttribute('name',"username");
+        //    let s = document.createElement("input"); 
+        //     s.setAttribute('type',"submit");
+        //     s.setAttribute('value',"Submit");
+        //     f.appendChild(i);
+        //     f.appendChild(s);
+        //     document.getElementById("form1").appendChild(f);
+        //  document.getElementById("submit").addEventListener("click", function () {document.getElementById("form1").innerText ="Yay, you subscribed! Go check your email and get your discount!";
+
 
   //Fisher–Yates shuffle implemented
   shuffleCards() {
