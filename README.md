@@ -208,6 +208,10 @@ My project was developed using the IDE, Gitpod. I deployed my website from the G
 - Fiid Header Image (with edits made in Photoshop)- [from Fiid's Website](https://cdn.shopify.com/s/files/1/0072/0165/2802/files/Website_Banner_NEW_1900x.progressive.jpg?v=1610033437)
 - card images 
 - yummy https://hypeddit.com/track/c0q1eo
+- card flip https://freesound.org/people/f4ngy/sounds/240776/
+- correct card matcg https://freesound.org/people/ertfelda/sounds/243701/
+- win audio https://freesound.org/people/Scrampunk/sounds/344696/
+https://freesound.org/people/unadamlar/sounds/341985/
 
 ### Acknowledgements
 
