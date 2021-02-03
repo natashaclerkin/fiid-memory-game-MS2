@@ -7,6 +7,25 @@ The brief was to develop an interactive front-end site which responds to the use
 
 AM I RESPONSIVE IMAGE
 
+
+---
+# Contents
+
+- [Project Overview](#project-overview)
+- [UX](#ux)
+- [Features](#features)
+- [Testing](#testing)
+- [Technologies Used](#technologies-used)
+- [Deployment](#deployment)
+- [Credits](#credits)
+
+
+
+
+
+
+# Project Overview
+[^ Back To Top ](#contents) 
 ## [Fiid Match & Win Memory Game](https://natashaclerkin.github.io/fiid-memory-game-MS2/) 
 
 Irish plant-based food B2C company, Fiid, are looking to further brand awareness and increase customer acquisition. They would like to drive sales by creating a timed memory game for users to win discount code for their next online purchase. The user has to match two of each product type before the time runs out. If they are successful, they are able to subscribe to earn a discount code which will be valid for their next purchase. Users have the ability to share the game with their followers on social media. The target audience are health-conscious individuals, particularly the millennial bracket who like games and discounts. 
@@ -31,8 +50,15 @@ The opportunity to win a discount code incentivizes participation aswell as incr
 - Have a good experience while on the site
 
 
-# UX
 
+
+
+
+
+
+
+# UX
+[^ Back To Top ](#contents) 
 ### Strategy
 It's vital as a B2C company to stand out amongst the competition because the B2C space is crowded with competitors. Most users will make their purchase on one of their first few visits so it is so important to grab the user and keep them on the site long enough to place the order. Compelling but minimal text accompanied by lots of imagery is required to keep the user engaged. 
 As the memory game is a huge part of the customer acquisition process, it has to be developed to a high standard and respond correctly to the user's interactions. The overall game will be simple enough for the user to complete in order to reward them for their time and encourage them to place an order.  
@@ -79,6 +105,7 @@ The banner assets of fresh produce and company typography was also implemented t
 ![alt text](assets/wireframes/fiid-color-palette.PNG "Fiid Color Palette")
 
 # Features
+[^ Back To Top ](#contents) 
 
 The fully responsive website consists of 
 
@@ -86,6 +113,7 @@ The fully responsive website consists of
 Due to time restraints, I was unable to include the following features but hope to implement them in a future release:
 
 # Technologies Used
+[^ Back To Top ](#contents) 
 
 In the construction of this project I have utilised the following languages, frameworks, libraries and tools:
 - **HTML5,** **CSS3** and **JavaScript** programming languages
@@ -132,7 +160,7 @@ In the construction of this project I have utilised the following languages, fra
 
 
 # Testing
-
+[^ Back To Top ](#contents) 
 
 ## UX stories testing
 
@@ -174,11 +202,30 @@ Through constant testing, I was able to achieve almost 100% on all metrics for o
 
 ![alt text](assets/wireframes/lighthouse-audit-2.PNG "Lighthouse Testing Final Run Results")
 
-I asked my family, friends and fellow students to test their site on different devices to locate potential bugs. The website was tested over multiple devices (iPhone 5, 6, 11: Safari and Chrome, iPad, Samsung Galaxy) and many browsers (Chrome, Firefox, Safari and Edge) to guarantee responsive behaviour and compatibility.  
+I asked my family, friends and fellow students to test their site on different devices to locate potential bugs. The website was tested over multiple devices (Samsung Galaxy A7, Xiaomi Mi 10, iPhone 5, 6, 11: Safari and Chrome, iPad, Google Nexus 10) and many browsers (Chrome, Firefox, Safari and Edge) to guarantee responsive behaviour and compatibility.  
 
+The following actions were taken by each tester and the results noted below:
+
+| ACTION      | TEST RESULT      |
+| ----------- | ----------- |
+| **Open the Fiid Match & Win website**    | *"The Link opens to main landing page with game instructions."*       |
+| **Read game instructions**   | *"Instructions are clear and concise."*       |
+| **Select 'Try Your Luck' button to start the game**  | *"The button rediverts to the gameboard."*
+| **Let the timer run out to reach Game Over screen and select 'Try Again' button**  | *"When the timer reaches zero and the cards haven't been all matched, the game ends with Game Over screen and audio with the option to play again"*        |        |
+| **Match all pairs to complete the game in 30 seconds**  | *"The new screen is presented with flips reset to 0 and timer back to 30. All cards are matched on time and a new screen with a congratulations audio and message pops up."*        |
+| **Responsive design?**  | *Text*        |
+| **User friendly display?**  | *Text*        |
+| **Interactive objects working correcly?**  | *Text*        |
+| **Music & sound effects work on device?**  | *Text*        |
+| **Links divert to expected destinations?**  | *Text*        |
+| **Functional subscription form?**  | *Text*        |
+| **Ability to share game on social media & via email?**  | *Text*        |
 
 
 # Deployment
+
+[^ Back To Top ](#contents) 
+
 This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. For the site to deploy correctly on GitHub pages, the landing page must be named index.html.
 
 To run locally, you can clone this repository directly into the editor of your choice by pasting git clone https://natashaclerkin.github.io/fiid-memory-game-MS2 into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
@@ -200,7 +247,7 @@ My project was developed using the IDE, Gitpod. I deployed my website from the G
 
 
 # Credits
- 
+[^ Back To Top ](#contents) 
 ### Media
  The images used in this site were obtained from the following sources:
 
@@ -216,9 +263,10 @@ https://freesound.org/people/unadamlar/sounds/341985/
 ### Acknowledgements
 
 I took inspiration from the following sources however I did implement my own custom code with each snippet also:
-https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html
-     
 
-Fiid
+- 'Try your luck' & 'Try Again' buttons - [Glowing Button Animation](https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html)
+- 
 
-Finally, I would like to thank my mentor Guido Cecilio for his overall support throughout the project.
+I would like to thank my mentor Guido Cecilio for his guidance and overall support throughout the project. 
+
+Last but certainly not least, I'd like to thank the amazing Fiid for their use of content, imagery and real-life business concept for the project. I am a happy customer and was only too excited to use them and their yummy pouches as the source material for my project!
