@@ -138,7 +138,7 @@ class MatchAndWin {
     $('#elegantModalForm').modal('show');
   }
 
-  // Congrats modal with message upon form submission. 5 second Bootstrap loading animation added for good ux.
+  // Congrats modal with message upon form submission. 5 second Bootstrap loading animation added for good ux: https://getbootstrap.com/docs/4.4/components/spinners
   addEventListener() {
     document.getElementById("subscribe-submit").addEventListener("click", () => {
         const subscribeEl = document.getElementById("dynamic-content-a");
@@ -189,6 +189,7 @@ function ready() {
     });
   });
 
+  //Fix modal close issue: https://stackoverflow.com/questions/16152073/prevent-bootstrap-modal-from-disappearing-when-clicking-outside-or-pressing-esca
   $('#elegantModalForm').modal({ backdrop: 'static', keyboard: false, show: false });
 }
 

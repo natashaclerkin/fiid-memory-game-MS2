@@ -28,7 +28,7 @@ AM I RESPONSIVE IMAGE
 [^ Back To Top ](#contents) 
 ## [Fiid Match & Win Memory Game](https://natashaclerkin.github.io/fiid-memory-game-MS2/) 
 
-Irish plant-based food B2C company, Fiid, are looking to further brand awareness and increase customer acquisition. They would like to drive sales by creating a timed memory game for users to win discount code for their next online purchase. The user has to match two of each product type before the time runs out. If they are successful, they are able to subscribe to earn a discount code which will be valid for their next purchase. Users have the ability to share the game with their followers on social media. The target audience are health-conscious individuals, particularly the millennial bracket who like games and discounts. 
+Irish plant-based food B2C company, Fiid, create crave-worthy, convenient vegan meals. They are looking to further brand awareness, increase customer acquisition and maintain brand loyalty. They would like to drive sales by creating a timed memory game for users to win a discount code for their next online purchase. The user has to match two of each product type before the time runs out. If they are successful, they are able to subscribe to earn a discount code which will be valid for their next purchase. Users have the ability to share the game with their followers on social media. The target audience are health-conscious individuals, particularly the 18-35 millennial bracket who like games and discounts. 
 
 The primary goal of the main Fiid website is to inform and direct users to place an order. I wanted to create an experience that integrates with their main website. This would include instructions on how the game works, how to obtain the discount code through a short signup form and how they can spread the word through social media. There would also be links to the company's social media channels and most importantly the main online store. This would allow users to learn more about the products, place an order or share the game with their followers on their own channels.
 
@@ -37,24 +37,17 @@ The opportunity to win a discount code incentivizes participation aswell as incr
 
 **The business goals of this website are:**
 
-- To market the current offering of Fiid products.
+- Market the current offering of Fiid products.
 - Increase customer acquisition.
-- To increase brand recognition and follower engagement. 
-- Make the brand stand out from the swarm of plant-based companies during Veganuary 
+- Increase brand recognition and follower engagement. 
+- Make the brand stand out from the swarm of plant-based companies during Veganuary. 
 - Target a younger audience who have more disposible income such as millennials.
 
 **The customer goals of this website are:**
 
-- Learn about the product offering
-- Obtain a discount towards future orders
-- Have a good experience while on the site
-
-
-
-
-
-
-
+- Obtain a discount towards future orders.
+- Learn about the product offering.
+- Have a good experience while on the site.
 
 
 # UX
@@ -87,12 +80,14 @@ The market is saturated with plant-based products and the user wants a quality p
 ### Scope
 To achieve the strategic goals, I wanted to include the following features in this production release:
 
-- Simple and short signup form
-- Nav bar with minimal content - i.e. just social media links and link to main site
-- Simplistic timed memory game using JavaScript - including countdown and flip counter
+- Instructions for the game with inviting 'try your luck' **button**
+- Simplistic, interactive **JavaScript-led timed memory game** using  - including timer and flip counter
+- Header containing company logo and **Nav bar** with minimal content to not distract player- i.e. just necessary links such as social media and link to main Fiid site
+- **Background image** featuring company products
+- Short **signup form** for users to complete in order to receive a discount
 
 ### Structure 
-The user will be presented with a short, simple user-friendly game leaving them with an enjoyable experience, a lasting memory of the 4 products and hopefully a discount to use at the checkout.
+The user will be presented with a short, simple user-friendly game leaving them with an enjoyable experience, a lasting memory of the 4 Fiid products and hopefully a discount to use at the checkout. 
  
 ### Skeleton
 - [Wireframes](assets/wireframes/wireframes.pdf "Fiid Wireframes"): The project contains the instructions screen, the game screen, gameover screen and win screen.
@@ -107,7 +102,20 @@ The banner assets of fresh produce and company typography was also implemented t
 # Features
 [^ Back To Top ](#contents) 
 
-The fully responsive website consists of 
+The fully responsive site consists of:
+
+**Instructions overlay screen:** I used an overlay instead of a separate page so the user can slightly see the game behind it and to give the user an indication like there are less steps to receive their discount. This includes three straightforward instructions with the main action highlighted for better UX and is accompanied by the enticing 'Try your luck' button.
+**Main page:** Once the 'Try your luck' button is selected, the page loads to reveal the navbar, background image with company products, gameboard with cards, timer, flip counter and background music. The game starts automatically.
+**Timer:** The time counts down from 30 seconds and displays the time remaining for the user to complete the game.
+**Flip counter:** This counts the number of flips the user has made, allowing them to monitor their progress.
+**Gameboard:** This displays 12 game cards face down ready to be clicked.
+**Game cards:** Each card has the Fiid logo on the back and contains 1 of 6 Fiid product images to be matched by the user to win the game. The cards have a flip sound effect when selected and turned. When a match is found, a correct match sound effect can be heard. The matched cards also become interactive and appears to "dance" in unison with its match.
+ 
+
+
+
+
+
 
 ### Features Left to Implement
 Due to time restraints, I was unable to include the following features but hope to implement them in a future release:
@@ -133,6 +141,8 @@ In the construction of this project I have utilised the following languages, fra
     - **Chrome Dev Tools** was used to consistently test the site and run reports from Lighthouse.
 - [Google Fonts](https://getbootstrap.com)
     - **Google Fonts** was used to style the website fonts.
+- [Font Awesome](https://fontawesome.com/)
+    - I used the font & icon toolkit Font Awesome in the win modal to define elements by a visual means and break up the larger section of text.
 - [Favicon.io](https://favicon.io/)
     - **Favicon.io** was used to generate the favicons for the site.    
 - [Freeformatter CSS Beautify](https://www.freeformatter.com/css-beautifier.html)
@@ -155,14 +165,44 @@ In the construction of this project I have utilised the following languages, fra
     - **JS Hint** was used to analyze and ensure the source code complies with coding rules. 
 - [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
     - I used **WAVE** to make my site more accessible to individuals with disabilities by detecting any potential issues.
-FONT AWESOME
+
 
 
 
 # Testing
 [^ Back To Top ](#contents) 
 
+I asked my family, friends and fellow students to test their site on different devices to locate potential bugs. The website was tested over multiple devices (Samsung Galaxy A7, Xiaomi Mi 10, iPhone 5, 6, 11: Safari and Chrome, iPad, Google Nexus 10) and many browsers (Chrome, Firefox, Safari and Edge) to guarantee responsive behaviour and compatibility.  
+
+The following actions were taken by each tester and the results noted below:
+
+| ACTION      | TEST RESULT      |
+| ----------- | ----------- |
+| **Open the Fiid Match & Win website**    | *"The Link opens to main landing page with game instructions."*       |
+| **Read game instructions**   | *"Instructions are clear and concise."*       |
+| **Select 'Try Your Luck' button to start the game**  | *"The button rediverts to the gameboard."*
+| **Let the timer run out to reach Game Over screen and select 'Try Again' button**  | *"When the timer reaches zero and the cards haven't been all matched, the game ends with Game Over screen and audio with the option to play again"*        |        |
+| **Match all pairs to complete the game in 30 seconds**  | *"The new screen is presented with flips reset to 0 and timer back to 30. All cards are matched on time and a new screen with a congratulations audio and message pops up."*        |
+| **Responsive design?**  | *Text*        |
+| **User friendly display?**  | *Text*        |
+| **Interactive objects working correcly?**  | *Text*        |
+| **Music & sound effects work on device?**  | *Text*        |
+| **Links divert to expected destinations?**  | *Text*        |
+| **Functional subscription form?**  | *Text*        |
+| **Ability to share game on social media & via email?**  | *Text*        |
+
+
+cxl click off win modal issue
+dynamic html win modal
+
+
+
 ## UX stories testing
+1. **_As a new visitor to the website,_** I want to find out about the products on offer and why I should purchase from the company as opposed to similar brands so that I can potentially become a customer. 
+
+2. **_As a regular customer of the brand,_** I want to be rewarded for my loyalty so that I can receive discounts/offers on future orders and remain a loyal customer.  
+
+3. **_As a user on the site,_** I want to have an enjoyable and hassle-free experience so that I can potentially place an order.
 
 
 
@@ -202,24 +242,6 @@ Through constant testing, I was able to achieve almost 100% on all metrics for o
 
 ![alt text](assets/wireframes/lighthouse-audit-2.PNG "Lighthouse Testing Final Run Results")
 
-I asked my family, friends and fellow students to test their site on different devices to locate potential bugs. The website was tested over multiple devices (Samsung Galaxy A7, Xiaomi Mi 10, iPhone 5, 6, 11: Safari and Chrome, iPad, Google Nexus 10) and many browsers (Chrome, Firefox, Safari and Edge) to guarantee responsive behaviour and compatibility.  
-
-The following actions were taken by each tester and the results noted below:
-
-| ACTION      | TEST RESULT      |
-| ----------- | ----------- |
-| **Open the Fiid Match & Win website**    | *"The Link opens to main landing page with game instructions."*       |
-| **Read game instructions**   | *"Instructions are clear and concise."*       |
-| **Select 'Try Your Luck' button to start the game**  | *"The button rediverts to the gameboard."*
-| **Let the timer run out to reach Game Over screen and select 'Try Again' button**  | *"When the timer reaches zero and the cards haven't been all matched, the game ends with Game Over screen and audio with the option to play again"*        |        |
-| **Match all pairs to complete the game in 30 seconds**  | *"The new screen is presented with flips reset to 0 and timer back to 30. All cards are matched on time and a new screen with a congratulations audio and message pops up."*        |
-| **Responsive design?**  | *Text*        |
-| **User friendly display?**  | *Text*        |
-| **Interactive objects working correcly?**  | *Text*        |
-| **Music & sound effects work on device?**  | *Text*        |
-| **Links divert to expected destinations?**  | *Text*        |
-| **Functional subscription form?**  | *Text*        |
-| **Ability to share game on social media & via email?**  | *Text*        |
 
 
 # Deployment
@@ -259,15 +281,21 @@ My project was developed using the IDE, Gitpod. I deployed my website from the G
 - Correct card match sound effect - [from Freesound.org](https://freesound.org/people/ertfelda/sounds/243701/)
 - Victory sound effect - [from Freesound.org](https://freesound.org/people/unadamlar/sounds/341985/)
 - Gameover sound effect - [from Freesound.org](https://mixkit.co/free-sound-effects/game-over/)
-
+ 
 
 ### Acknowledgements
 
 I took inspiration from the following sources however I did implement my own custom code with each snippet also:
 
-- 'Try your luck' & 'Try Again' buttons - [Glowing Button Animation](https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html)
-- 
+- I undertook alot of research into JavaScript game development through reading material and watching tutorials from [Portexe](https://portexe.com/), [Code Resources](https://www.ci-resources.online/), [Scotch.io](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript), [Dribbble](https://dribbble.com/tags/memory_game), [Wes Bos](https://courses.wesbos.com), [Watch and Code](https://watchandcode.com/courses), [Dev.to](https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j).
+- I practiced JS and the research material on https://bost.ocks.org/mike/shuffle/ and [CodePen](https://codepen.io/).  
+- Bootstrap was used for the [Navbar](https://getbootstrap.com/docs/4.4/components/navbar/) and the [Loading Spinner](https://getbootstrap.com/docs/4.4/components/spinners/) and overall responsive behavior between devices.
+- I found inspiration in a tutorial from [Portexe](https://portexe.com/) to make the cards become interactive and dance when matched correctly.
+- I implemented the [Fisher–Yates Shuffle](https://bost.ocks.org/mike/shuffle/) in my game to randomize the card shuffle.
+- I came across this [Glowing Button Animation](https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html) when I was searching for inspiration for enticing 'Try your luck' & 'Try Again' buttons.
+- During development I found solutions to smaller coding queries in Stack Overflow as well as when I had difficulties with the [Modal Positioning](https://stackoverflow.com/questions/33184157/bootstrap-modal-height-as-per-window-height) and [Preventing the win modal from disappearing when clicking outside](https://stackoverflow.com/questions/16152073/prevent-bootstrap-modal-from-disappearing-when-clicking-outside-or-pressing-esca)
 
-I would like to thank my mentor Guido Cecilio for his guidance and overall support throughout the project. 
+
+I would like to thank my mentor Guido Cecilio for his support in helping me to understand JavaScript and guidance throughout the project. 
 
 Last but certainly not least, I'd like to thank the amazing Fiid for their use of content, imagery and real-life business concept for the project. I am a happy customer and was only too excited to use them and their yummy pouches as the source material for my project!

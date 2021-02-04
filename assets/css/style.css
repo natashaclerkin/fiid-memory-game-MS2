@@ -142,6 +142,7 @@ body {
   transform: rotateY(0)
 }
 
+/*Cards dancing animation: Portexe (https://portexe.com/)*/
 .card.matched .card-value {
   -webkit-animation: dance 1s linear infinite 500ms;
   animation: dance 1s linear infinite 500ms;
@@ -178,6 +179,7 @@ h2 {
   padding-bottom: 10px;
 }
 
+/* Glowing button Animation: https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html*/
 .btn-success {
   font-size: 21px;
   -webkit-animation: glowing 1.4s infinite;
@@ -187,7 +189,6 @@ h2 {
 }
 
 
-/*https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html*/
 
 @-webkit-keyframes glowing {
   0% {
@@ -489,6 +490,7 @@ h4 {
   display: block;
 }
 
+/* Modal Positioning:(https://stackoverflow.com/questions/33184157/bootstrap-modal-height-as-per-window-height)*/
 .modal-body {
   max-height: 75vh;
   overflow-y: auto;
