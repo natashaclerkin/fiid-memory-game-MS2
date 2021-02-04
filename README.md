@@ -155,7 +155,7 @@ In the construction of this project I have utilised the following languages, fra
     - **JS Hint** was used to analyze and ensure the source code complies with coding rules. 
 - [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
     - I used **WAVE** to make my site more accessible to individuals with disabilities by detecting any potential issues.
-
+FONT AWESOME
 
 
 
@@ -252,13 +252,14 @@ My project was developed using the IDE, Gitpod. I deployed my website from the G
  The images used in this site were obtained from the following sources:
 
 - Fiid Company Logo - [from Fiid's Website](https://cdn.shopify.com/s/files/1/0072/0165/2802/files/fiid-main-logo_410x.png?v=1531837903)
-- Fiid Header Image (with edits made in Photoshop)- [from Fiid's Website](https://cdn.shopify.com/s/files/1/0072/0165/2802/files/Website_Banner_NEW_1900x.progressive.jpg?v=1610033437)
-- card images 
-- yummy https://hypeddit.com/track/c0q1eo
-- card flip https://freesound.org/people/f4ngy/sounds/240776/
-- correct card matcg https://freesound.org/people/ertfelda/sounds/243701/
-- win audio https://freesound.org/people/Scrampunk/sounds/344696/
-https://freesound.org/people/unadamlar/sounds/341985/
+- Fiid Header Image (with edits made in Photoshop) - [from Fiid's Website](https://cdn.shopify.com/s/files/1/0072/0165/2802/files/Website_Banner_NEW_1900x.progressive.jpg?v=1610033437)
+- Card product pouch images - [from Fiid's Website](https://www.eatfiid.com)
+- 'Yummy' by Justin Bieber instrumental background music - [from Hypeddit](https://hypeddit.com/track/c0q1eo)
+- Card flip sound effect - [from Freesound.org](https://freesound.org/people/f4ngy/sounds/240776/)
+- Correct card match sound effect - [from Freesound.org](https://freesound.org/people/ertfelda/sounds/243701/)
+- Victory sound effect - [from Freesound.org](https://freesound.org/people/unadamlar/sounds/341985/)
+- Gameover sound effect - [from Freesound.org](https://mixkit.co/free-sound-effects/game-over/)
+
 
 ### Acknowledgements
 

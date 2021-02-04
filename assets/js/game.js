@@ -33,7 +33,7 @@ class AudioController {
 }
 
 //Game Object
-class MixOrMatch {
+class MatchAndWin {
   constructor(totalTime, cards) {
     this.cardsArray = cards;
     this.totalTime = totalTime;
@@ -175,7 +175,7 @@ class MixOrMatch {
 function ready() {
   let overlays = Array.from(document.getElementsByClassName('overlay-text'));
   let cards = Array.from(document.getElementsByClassName('card'));
-  let game = new MixOrMatch(60, cards);
+  let game = new MatchAndWin(60, cards);
 
   overlays.forEach(overlay => {
     overlay.addEventListener('click', () => {

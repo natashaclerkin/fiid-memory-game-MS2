@@ -496,5 +496,16 @@ h4 {
 }
 
 .btn-dark {
-  width: 150px;
+  width: 190px;
+}
+
+.btn-dark:hover {
+  background-color: #28A745;
+  color: #fff;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-transform: initial;
 }
