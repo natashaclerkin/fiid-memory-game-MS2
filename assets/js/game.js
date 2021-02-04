@@ -135,10 +135,10 @@ class MixOrMatch {
   win() {
     clearInterval(this.countDown);
     this.audioController.win();
-    // document.getElementById('win-text').classList.add('visible');
     $('#elegantModalForm').modal('show');
   }
 
+  // Congrats modal with message upon form submission. 5 second Bootstrap loading animation added for good ux.
   addEventListener() {
     document.getElementById("subscribe-submit").addEventListener("click", () => {
         const subscribeEl = document.getElementById("dynamic-content-a");
@@ -156,21 +156,6 @@ class MixOrMatch {
         return false;
     });
   }
-
-        //     let f = document.createElement("form");
-        //     f.setAttribute('method',"post");
-        //     f.setAttribute('action',"submit.php");
-        //     let i = document.createElement("input");
-        //     i.setAttribute('type',"text");
-        //     i.setAttribute('name',"username");
-        //    let s = document.createElement("input"); 
-        //     s.setAttribute('type',"submit");
-        //     s.setAttribute('value',"Submit");
-        //     f.appendChild(i);
-        //     f.appendChild(s);
-        //     document.getElementById("form1").appendChild(f);
-        //  document.getElementById("submit").addEventListener("click", function () {document.getElementById("form1").innerText ="Yay, you subscribed! Go check your email and get your discount!";
-
 
   //Fisher–Yates shuffle implemented
   shuffleCards() {
@@ -206,13 +191,5 @@ function ready() {
 
   $('#elegantModalForm').modal({ backdrop: 'static', keyboard: false, show: false });
 }
-
-
-//Page Loading
-// if (document.readyState === 'loading') {
-//   document.addEventListener('DOMContentLoaded', ready());
-// } else {
-//   ready();
-// }
 
 $(document).ready(ready);
