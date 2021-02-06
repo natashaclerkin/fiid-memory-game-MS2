@@ -109,7 +109,7 @@ The fully responsive site consists of:
 **Timer:** The time counts down from 30 seconds and displays the time remaining for the user to complete the game.
 **Flip counter:** This counts the number of flips the user has made, allowing them to monitor their progress.
 **Gameboard:** This displays 12 game cards face down ready to be clicked.
-**Game cards:** Each card has the Fiid logo on the back and contains 1 of 6 Fiid product images to be matched by the user to win the game. The cards have a flip sound effect when selected and turned. When a match is found, a correct match sound effect can be heard. The matched cards also become interactive and appears to "dance" in unison with its match.
+**Game cards:** Each card has the Fiid logo on the back and contains 1 of 6 Fiid product images to be matched by the user to win the game. The cards have a flip sound effect when selected and turned. When a match is found, a correct match sound effect can be heard. The matched cards remain faceup for product placement.
  
 
 
@@ -288,7 +288,7 @@ My project was developed using the IDE, Gitpod. I deployed my website from the G
 I took inspiration from the following sources however I did implement my own custom code with each snippet also:
 
 - I undertook alot of research into JavaScript game development through reading material and watching tutorials from [Portexe](https://portexe.com/), [Code Resources](https://www.ci-resources.online/), [Scotch.io](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript), [Dribbble](https://dribbble.com/tags/memory_game), [Wes Bos](https://courses.wesbos.com), [Watch and Code](https://watchandcode.com/courses), [Dev.to](https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j).
-- I practiced JS and the research material on https://bost.ocks.org/mike/shuffle/ and [CodePen](https://codepen.io/).  
+- I practiced JS and the research material on [W3 Schools](https://www.w3schools.com/) and [CodePen](https://codepen.io/).  
 - Bootstrap was used for the [Navbar](https://getbootstrap.com/docs/4.4/components/navbar/) and the [Loading Spinner](https://getbootstrap.com/docs/4.4/components/spinners/).
 - I implemented the [Fisher–Yates Shuffle](https://bost.ocks.org/mike/shuffle/) in my game to randomize the card shuffle.
 - I came across this [Glowing Button Animation](https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html) when I was searching for inspiration for enticing 'Try your luck' & 'Try Again' buttons.

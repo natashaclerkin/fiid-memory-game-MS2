@@ -41,7 +41,6 @@ class MatchAndWin {
     this.audioController = new AudioController();
     this.addEventListener();
   }
-
   startGame() {
     this.cardToCheck = null;
     this.totalClicks = 0;
@@ -58,14 +57,12 @@ class MatchAndWin {
     this.timer.innerText = this.timeRemaining;
     this.ticker.innerText = this.totalClicks;
   }
-
   hideCards() {
     this.cardsArray.forEach(card => {
       card.classList.remove('visible');
       card.classList.remove('matched');
     });
   }
-
   /**
    * 
    * @param {*} card 
@@ -83,7 +80,6 @@ class MatchAndWin {
         this.cardToCheck = card;
     }
   }
-
   checkForCardMatch(card) {
     if (this.getCardType(card) === this.getCardType(this.cardToCheck))
       this.cardMatch(card, this.cardToCheck);
@@ -92,7 +88,6 @@ class MatchAndWin {
 
     this.cardToCheck = null;
   }
-
   cardMatch(card1, card2) {
     this.matchedCards.push(card1);
     this.matchedCards.push(card2);
@@ -102,20 +97,17 @@ class MatchAndWin {
     if (this.matchedCards.length === this.cardsArray.length)
       this.win();
   }
-
   cardMisMatch(card1, card2) {
     this.busy = true;
     setTimeout(() => {
       card1.classList.remove('visible');
       card2.classList.remove('visible');
       this.busy = false;
-    }, 1000);
+    }, 1000); //gives the user one second to comprehend what the mismatch cards are and where there are located to memorise for future moves.
   }
-
   getCardType(card) {
     return card.getElementsByClassName('card-value')[0].src;
   }
-
   startCountDown() {
     return setInterval(() => {
       this.timeRemaining--;
@@ -129,7 +121,6 @@ class MatchAndWin {
     this.audioController.gameOver();
     document.getElementById('game-over-text').classList.add('visible');
   }
-  
   win() {
     clearInterval(this.countDown);
     this.audioController.win();
@@ -164,7 +155,7 @@ class MatchAndWin {
     }
   }
 
-  // Card can only be flipped if it's not in the middle of another action and hasn't been matched already and its not the card to check
+  // Card can only be flipped if it's not in the middle of an animation and hasn't been matched already and its not the card to check
   canFlipCard(card) {
     return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
   }
@@ -191,4 +182,4 @@ function ready() {
   $('#elegantModalForm').modal({ backdrop: 'static', keyboard: false, show: false });
 }
 
-$(document).ready(ready);
+$(document).ready(ready); 
