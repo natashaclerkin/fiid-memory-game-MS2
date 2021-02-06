@@ -9,10 +9,11 @@
 
 body {
   margin: 0;
-  background-image: url("../images/memorygame-background.png");
-  background-position: center center;
+  background: url("../images/memorygame-background.png")no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -429,7 +430,8 @@ p {
 
 @media screen and (min-width: 768px) {
 	 body .instruction-list > li {
-		font-size: 20px;
+        font-size: 20px;
+        padding-left: 70px;
     }
     body .instruction {
         font-size: 24px;
@@ -480,7 +482,10 @@ p {
     .fiid {
     align-self: center;
     }
+}
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 992px) {
     .page-title {
     padding-top: 60px;
 }
@@ -498,6 +503,8 @@ p {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .page-title {
     padding-top: 250px;
+
+    padding-left: 70px;
 }
    }
    */
