@@ -226,6 +226,7 @@ transform: scale(0.25);
   font-size: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-right: 10px;
 }
 
 /* Glowing button Animation to entice user to play game (Made custom changes to code credit: https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html*/
@@ -431,7 +432,7 @@ p {
 @media screen and (min-width: 768px) {
 	 body .instruction-list > li {
         font-size: 20px;
-        padding-left: 70px;
+        margin-left: 20px;
     }
     body .instruction {
         font-size: 24px;
@@ -441,7 +442,7 @@ p {
     }
     .page-title {
     font-size: 2em;
-    padding-top: 220px;
+    padding-top: 280px;
     }   
 }
 
@@ -485,26 +486,15 @@ p {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media (max-width: 992px) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
     .page-title {
-    padding-top: 60px;
+    padding-top: 90px;
 }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1600px) {
      .page-title {
-    padding-top: 150px;
+    padding-top: 270px;
 }
 }
-
-
-/* iPads - Code credit:https://stackoverflow.com/questions/8271493/css-media-query-to-target-ipad-and-ipad-only
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .page-title {
-    padding-top: 250px;
-
-    padding-left: 70px;
-}
-   }
-   */
