@@ -172,7 +172,7 @@ In the construction of this project I have utilised the following languages, fra
 # Testing
 [^ Back To Top ](#contents) 
 
-I asked my family, friends and fellow students to test their site on different devices to locate potential bugs. The website was tested over multiple devices (Samsung Galaxy A7, Xiaomi Mi 10, iPhone 5, 6, 11: Safari and Chrome, iPad, Google Nexus 10) and many browsers (Chrome, Firefox, Safari and Edge) to guarantee responsive behaviour and compatibility.  
+I asked my family, friends and fellow students to test their site on different devices to locate potential bugs. The website was tested over multiple devices (Samsung Galaxy A7, Xiaomi Mi 10, iPhone 5, 6, 7, 11: Safari and Chrome, iPad, Google Nexus) and many browsers (Chrome, Firefox, Safari and Edge) to guarantee responsive behaviour and compatibility.  
 
 The following actions were taken by each tester and the results noted below:
 
