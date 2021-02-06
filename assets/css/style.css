@@ -1,4 +1,7 @@
+/* || FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+/* || GENERAL STYLES */
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -18,6 +21,46 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+/* || SITEWIDE */
+
+/* Headings & Sub-headings*/
+
+.page-title {
+  color: #000;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 2.35rem;
+  border: 2px solid #fff;
+  font-weight: bold;
+  background-color: #000;
+}
+
+h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 4.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+}
+
+/* || NAVIGATION */
 
 .nav-item {
   padding-right: 1rem;
@@ -40,12 +83,6 @@ body {
     color: #28A745;
 }
 
-.btn-outline-light:hover {
-    color: #fff;
-    background-color: #28a745;
-    border-color: #fff;
-}
-
 .navbar-nav{
  margin-right: 10px;
 }
@@ -54,20 +91,19 @@ body {
     background-color: green;
 }
 
-
 .navbar-dark .navbar-toggler {
   color: #fff;
   border-color: #fff;
   margin-right: 10px;
 }
 
-.page-title {
-  color: #000;
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-top: 20px;
+.btn-outline-light:hover {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #fff;
 }
+
+/*|| GAMEBOARD DISPLAY */
 
 .game-info-container {
   grid-column: 1 / -1;
@@ -138,17 +174,28 @@ body {
   transform: rotateY(0)
 }
 
-/*Cards dancing animation: Portexe (https://portexe.com/)
-.card.matched .card-value {
-  -webkit-animation: dance 1s linear infinite 500ms;
-  animation: dance 1s linear infinite 500ms;
-}
-*/
-
 .card-value {
 transform: scale(0.25);
 }
 
+.card-back {
+  background-color: #fff;
+  border-color: #000;
+}
+
+.card-front {
+  background-color: #fff;
+  border-color: #000;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.fiid {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+/*|| OVERLAYS - INSTRUCTIONS & GAME OVER SECTIONS */
 
 .overlay-text {
   display: none;
@@ -167,11 +214,11 @@ transform: scale(0.25);
   color: #fff;
 }
 
-h2 {
-  font-size: 2.35rem;
-  border: 2px solid #fff;
+.instruction {
+  color: #28A745;
   font-weight: bold;
-  background-color: #000;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .instruction-list {
@@ -181,7 +228,7 @@ h2 {
   padding-bottom: 10px;
 }
 
-/* Glowing button Animation: https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html*/
+/* Glowing button Animation to entice user to play game (Made custom changes to code credit: https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html*/
 .btn-success {
   font-size: 21px;
   -webkit-animation: glowing 1.4s infinite;
@@ -189,8 +236,6 @@ h2 {
   background-color: #018920;
   border-color: #018920;
 }
-
-
 
 @-webkit-keyframes glowing {
   0% {
@@ -228,12 +273,6 @@ h2 {
   }
 }
 
-.overlay-text-small {
-  font-size: 1em;
-  color: green;
-  text-align: center;
-}
-
 .overlay-text.visible {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,19 +283,6 @@ h2 {
   flex-direction: column;
   -webkit-animation: overlay-grow 500ms forwards;
   animation: overlay-grow 500ms forwards;
-}
-
-h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  font-size: 4.5rem;
-  text-align: center;
-  margin-bottom: 30px;
 }
 
 @-webkit-keyframes overlay-grow {
@@ -281,117 +307,36 @@ h3 {
   }
 }
 
-/*@-webkit-keyframes dance {
-  0%,
-  100% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  25% {
-    -webkit-transform: rotate(-30deg);
-    transform: rotate(-30deg);
-  }
-  75% {
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
-  }
+
+/*|| WIN MODAL SECTION */
+
+.modal {
+  display: block;
 }
 
-@keyframes dance {
-  0%,
-  100% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  25% {
-    -webkit-transform: rotate(-30deg);
-    transform: rotate(-30deg);
-  }
-  75% {
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
-  }
-}*/
-
-.card-back {
-  background-color: #fff;
-  border-color: #000;
+/* Modal Positioning:(https://stackoverflow.com/questions/33184157/bootstrap-modal-height-as-per-window-height)*/
+.modal-body {
+  max-height: 75vh;
+  overflow-y: auto;
+  padding: 0rem;
 }
 
-.card-front {
-  background-color: #fff;
-  border-color: #000;
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+.btn-dark {
+  width: 190px;
 }
 
-
-
-
-.fiid {
-  -ms-flex-item-align: start;
-  align-self: flex-start;
+.btn-dark:hover {
+  background-color: #28A745;
+  color: #fff;
 }
 
-
-
-/* Medium devices (tablets, 768px and up) */
-
-@media screen and (min-width: 768px) {
-	 body .instruction-list > li {
-		font-size: 20px;
-    }
-    body .instruction {
-        font-size: 24px;
-    }
-    .game-info {
-    font-size: 1.5em;
-    }
-    .page-title {
-    font-size: 2em;
-    }   
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-transform: initial;
 }
 
-
-/* Large devices (desktops, 992px and up) */
-
-@media (min-width: 992px) {
-	 body .instruction-list > li {
-		font-size: 24px
-    }
-   body .instruction {
-        font-size: 28px;
-    }
-}
-
-
-@media (max-width: 600px) {
-  .game-container {
-    -ms-grid-columns: auto 10px auto;
-    grid-template-columns: repeat(3, auto);
-  }
-}
-
-  @media (max-width: 991px) {
-  .navbar-collapse{
-    padding-bottom: 10px; 
-}
-
-  .game-info-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-.instruction {
-  color: #28A745;
-  font-weight: bold;
-  font-size: 20px;
-  text-transform: uppercase;
-}
+/* Form section*/
 
 #subscribe-submit {
   background-color: #28A745;
@@ -429,18 +374,11 @@ h3 {
   display: block;
 }
 
-h4 {
-  font-size: 16px;
-  text-align: center;
-  color: #000;
-}
-
 .congrats h4 {
   padding-bottom: 100px;
 }
 
-
-/* Solid Social Share Buttons */
+/* Social Share Buttons */
 
 .social {
   text-align: center;
@@ -476,28 +414,56 @@ h4 {
   background-color: #3cd3d3;
 }
 
-.modal {
-  display: block;
+
+/*|| MEDIA QUERIES */
+
+/* Gameboard Small devices*/
+
+@media (max-width: 600px) {
+  .game-container {
+    -ms-grid-columns: auto 10px auto;
+    grid-template-columns: repeat(3, auto);
+  }
 }
 
-/* Modal Positioning:(https://stackoverflow.com/questions/33184157/bootstrap-modal-height-as-per-window-height)*/
-.modal-body {
-  max-height: 75vh;
-  overflow-y: auto;
-  padding: 0rem;
+/* Medium devices (tablets, 768px and up) */
+
+@media screen and (min-width: 768px) {
+	 body .instruction-list > li {
+		font-size: 20px;
+    }
+    body .instruction {
+        font-size: 24px;
+    }
+    .game-info {
+    font-size: 1.5em;
+    }
+    .page-title {
+    font-size: 2em;
+    }   
 }
 
-.btn-dark {
-  width: 190px;
+@media (max-width: 991px) {
+  .navbar-collapse{
+    padding-bottom: 10px; 
 }
 
-.btn-dark:hover {
-  background-color: #28A745;
-  color: #fff;
+  .game-info-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 }
 
-p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-transform: initial;
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+	 body .instruction-list > li {
+		font-size: 24px
+    }
+   body .instruction {
+        font-size: 28px;
+    }
 }

@@ -1,4 +1,3 @@
-//Audio
 class AudioController {
   constructor() {
     this.bgMusic = new Audio('assets/audio/yummy.mp3');
@@ -32,7 +31,6 @@ class AudioController {
   }
 }
 
-//Game Object
 class MatchAndWin {
   constructor(totalTime, cards) {
     this.cardsArray = cards;
@@ -138,7 +136,7 @@ class MatchAndWin {
     $('#elegantModalForm').modal('show');
   }
 
-  // Congrats modal with message upon form submission. 5 second Bootstrap loading animation added for good ux: https://getbootstrap.com/docs/4.4/components/spinners
+  // Congrats modal which becomes hidden upon form submission and displays a confirmation message to the user. 5 second Bootstrap loading animation added for good UX: (Made custom changes to code credit: https://getbootstrap.com/docs/4.4/components/spinners
   addEventListener() {
     document.getElementById("subscribe-submit").addEventListener("click", () => {
         const subscribeEl = document.getElementById("dynamic-content-a");
@@ -157,7 +155,7 @@ class MatchAndWin {
     });
   }
 
-  //Fisher–Yates shuffle implemented
+  // Fisher–Yates shuffle implemented for most efficient shuffle method
   shuffleCards() {
     for (let i = this.cardsArray.length - 1; i > 0; i--) {
       let randIndex = Math.floor(Math.random() * (i + 1));
@@ -166,16 +164,16 @@ class MatchAndWin {
     }
   }
 
+  // Card can only be flipped if it's not in the middle of another action and hasn't been matched already and its not the card to check
   canFlipCard(card) {
     return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
   }
 }
 
-//Overlays
 function ready() {
   let overlays = Array.from(document.getElementsByClassName('overlay-text'));
   let cards = Array.from(document.getElementsByClassName('card'));
-  let game = new MatchAndWin(60, cards);
+  let game = new MatchAndWin(60, cards); // Total time that the player has to match all cards
 
   overlays.forEach(overlay => {
     overlay.addEventListener('click', () => {
@@ -189,7 +187,7 @@ function ready() {
     });
   });
 
-  //Fix modal close issue: https://stackoverflow.com/questions/16152073/prevent-bootstrap-modal-from-disappearing-when-clicking-outside-or-pressing-esca
+  // Prevents modal from closing when area is clicked outside of modal (Made custom changes to code credit: https://stackoverflow.com/questions/16152073/prevent-bootstrap-modal-from-disappearing-when-clicking-outside-or-pressing-esca
   $('#elegantModalForm').modal({ backdrop: 'static', keyboard: false, show: false });
 }
 

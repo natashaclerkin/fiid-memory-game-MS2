@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-
     <title>Fiid | Ireland's fav quick and nourishing vegan meals</title>
 </head>
 
@@ -30,8 +29,8 @@
             <div class="collapse navbar-collapse text-right" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.eatfiid.com/pages/our_story" rel="noreferrer" target="_blank"
-                            aria-label="Learn more about Fiid">OUR STORY</a>
+                        <a class="nav-link" href="https://www.eatfiid.com/pages/our_story" rel="noreferrer"
+                            target="_blank" aria-label="Learn more about Fiid">OUR STORY</a>
                     </li>
                     <li class="nav-item">
                         <a href="https://www.instagram.com/eatfiid/" class="nav-link" rel="noreferrer" target="_blank"
@@ -46,8 +45,8 @@
                             aria-label="View our Twitter page"><i class="fab fa-twitter fa-lg"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-outline-light" href="https://www.eatfiid.com/collections/all-products" rel="noreferrer" target="_blank"
-                            aria-label="View our Fiid shop">SHOP
+                        <a class="btn btn-outline-light" href="https://www.eatfiid.com/collections/all-products"
+                            rel="noreferrer" target="_blank" aria-label="View our Fiid shop">SHOP
                             NOW</a>
                     </li>
                 </ul>
@@ -79,13 +78,9 @@
     <div id="game-over-text" class="overlay-text">
         <h3>GAME OVER</h3>
         <button type="button" class="btn btn-success btn-rounded" data-dismiss="modal">CLICK TO TRY AGAIN</button>
-        <!--  SMALL TEXT <span class="overlay-text-small">Click to Try Again</span>-->
     </div>
-    <!-- <div id="win-text" class="overlay-text"> -->
-        <!--  WINNER WINNER, FIID DINNER!-->
-
-        <!--<span class="overlay-text-small">Click to Play Again</span>-->
-    <!-- </div> -->
+    <!-- END OF GAME SPECS & OVERLAYS -->
+    <!-- START OF GAMEBOARD -->
     <div class="game-container">
         <div class="game-info-container">
             <div class="game-info">
@@ -95,8 +90,6 @@
                 Flips:<span id="flips">0</span>
             </div>
         </div>
-        <!-- END OF GAME SPECS & OVERLAYS -->
-        <!-- START OF GAMEBOARD -->
         <div class="card">
             <div class="card-back card-face">
                 <img class="fiid" src="assets/images/logo.png" alt="Fiid logo on back of card">
@@ -194,40 +187,21 @@
             </div>
         </div>
     </div>
-
-
-    <!-- Modal -->
-    <div class="modal fade" style="display: none;" id="elegantModalForm" tabindex="-1" data-backdrop="static" data-keyboard="false"
-        role="dialog" aria-labelledby="myModalLabel" aria-modal="true">
+    <!-- END OF GAMEBOARD -->
+    <!-- START OF WIN MODAL -->
+    <div class="modal fade" style="display: none;" id="elegantModalForm" tabindex="-1" data-backdrop="static"
+        data-keyboard="false" role="dialog" aria-labelledby="myModalLabel" aria-modal="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <!--Content-->
             <div class="modal-content form-elegant">
-                <!--Header-->
                 <img src="assets/images/fiid-congrats.jpg" alt="Fiid pouches">
                 <div class="modal-header text-center">
                     <h4 class="modal-title text-dark w-100" id="myModalLabel">
                         <span class="congrats">Winner Winner, FIID Dinner!</span>
                     </h4>
                 </div>
-                <!--	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-              </button>-->
-                <!--Body-->
                 <div class="modal-body mx-4">
-
-
-        
-                    <!--div id="subscribe">
-		<span id="email-text">Simply subscribe to Our Newsletter to Receive discount for your next online purchase!</span>
-		<form id="email-subscribe">
-			<label for="email">
-            <span class="enter-email">Enter email address:</span></label>
-			<input type="email" id="email" name="email" required />
-			<input type="button" id="subscribe-submit" value="Subscribe!" />
-      </form>
-	</div-->
                     <div id="subscribe">
-                         <div class="container-fluid">
+                        <div class="container-fluid">
                             <div class="row justify-content-center">
                                 <div class="col-sm-12 col-md-10">
                                     <div id="dynamic-content-a">
@@ -238,60 +212,59 @@
                                                     placeholder="Email" required>
                                             </div>
                                             <div class="form-group">
-                                                <!-- <input type="button" id="subscribe-submit" class="form-control"
-                                                    value="" /> -->
                                                 <button class="btn btn-primary form-control" id="subscribe-submit">
-                                                    <span class="d-none spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                                    <span class="d-none spinner-border spinner-border-sm" role="status"
+                                                        aria-hidden="true"></span>
                                                     Send me my discount!
                                                 </button>
                                             </div>
                                             <div class="form-check">
                                                 <input type="checkbox" class="form-check-input" id="dropdownCheck">
                                                 <label class="form-check-label" for="dropdownCheck">
-                                                    Sure why not, sign me up to Fiid's newsletter to receive product updates and more special offers!
+                                                    Sure why not, sign me up to Fiid's newsletter to receive product
+                                                    updates and more special offers!
                                                 </label>
                                             </div>
                                         </form>
                                     </div>
                                     <div id="dynamic-content-b" class="d-none text-center">
                                         <p>Congrats! Go check your email and grab your discount! </p>
-                                        <p>In the meantime, plan your next Fiid dinner over at our store or feel free to challenge your pals to our game. <i class="fas fa-hand-point-down"></i>
-</p>
- <div class="social">
-                    <a class="btn btn-sm btn-social btn-dark"
-                            href="https://www.eatfiid.com/collections/all-products" rel="noreferrer" target="_blank">SHOP FIID</a>
-                    </div>
-                    <div class="social">
-                        <a class="btn btn-sm btn-social btn-fb"
-                            href="https://www.facebook.com/sharer/sharer.php?u=https://natashaclerkin.github.io/fiid-memory-game-MS2"
-                            rel="noreferrer" target="_blank" title="Share this game on Facebook">
-                            <i class="fab fa-facebook-square"></i> Share
-                        </a>
-                        <a class="btn btn-sm btn-social btn-tw"
-                            href="https://twitter.com/intent/tweet?text=PAGE_TITLE&amp;url=https://natashaclerkin.github.io/fiid-memory-game-MS2"
-                            rel="noreferrer" target="_blank" title="Share this game on Twitter">
-                            <i class="fab fa-twitter"></i> Tweet
-                        </a>
-                        <a class="btn btn-sm btn-social btn-em"
-                            href="mailto:?subject=I-wanted-you-to-see-this-game-to-win-discount&amp;body=Check-out-this-site-https://natashaclerkin.github.io/fiid-memory-game-MS2/"
-                            title="Share by Email" rel="noreferrer" target="_blank">
-                            <i class="fas fa-envelope"></i> Share
-                        </a>                    
-                    </div>
-                                        <!--button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button-->
+                                        <p>In the meantime, plan your next Fiid dinner over at our store or feel free to
+                                            challenge your pals to our game. <i class="fas fa-hand-point-down"></i>
+                                        </p>
+                                        <div class="social">
+                                            <a class="btn btn-sm btn-social btn-dark"
+                                                href="https://www.eatfiid.com/collections/all-products" rel="noreferrer"
+                                                target="_blank">SHOP FIID</a>
+                                        </div>
+                                        <div class="social">
+                                            <a class="btn btn-sm btn-social btn-fb"
+                                                href="https://www.facebook.com/sharer/sharer.php?u=https://natashaclerkin.github.io/fiid-memory-game-MS2"
+                                                rel="noreferrer" target="_blank" title="Share this game on Facebook">
+                                                <i class="fab fa-facebook-square"></i> Share
+                                            </a>
+                                            <a class="btn btn-sm btn-social btn-tw"
+                                                href="https://twitter.com/intent/tweet?text=PAGE_TITLE&amp;url=https://natashaclerkin.github.io/fiid-memory-game-MS2"
+                                                rel="noreferrer" target="_blank" title="Share this game on Twitter">
+                                                <i class="fab fa-twitter"></i> Tweet
+                                            </a>
+                                            <a class="btn btn-sm btn-social btn-em"
+                                                href="mailto:?subject=I-wanted-you-to-see-this-game-to-win-discount&amp;body=Check-out-this-site-https://natashaclerkin.github.io/fiid-memory-game-MS2/"
+                                                title="Share by Email" rel="noreferrer" target="_blank">
+                                                <i class="fas fa-envelope"></i> Share
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                   
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- END OF GAMEBOARD -->
-        
+    <!-- END OF WIN MODAL -->
+    <!-- START OF SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -302,6 +275,7 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
     <script src="assets/js/game.js"></script>
+    <!-- END OF SCRIPTS -->
 </body>
 
 </html>
