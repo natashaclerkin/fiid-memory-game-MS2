@@ -465,15 +465,29 @@ p {
    body .instruction {
         font-size: 28px;
     }
+
     .card {
     position: relative;
     height: 150px;
     width: 150px;
     }
+    
     .card-value {
     transform: scale(0.32);
     }
+    
     .fiid {
     align-self: center;
+    }
+
+    .page-title {
+    padding-top: 100px;
 }
 }
+
+/* iPads - Code credit:https://stackoverflow.com/questions/8271493/css-media-query-to-target-ipad-and-ipad-only*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .page-title {
+    padding-top: 250px;
+}
+   }
