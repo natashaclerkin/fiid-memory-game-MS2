@@ -164,7 +164,7 @@ class MatchAndWin {
 function ready() {
   let overlays = Array.from(document.getElementsByClassName('overlay-text'));
   let cards = Array.from(document.getElementsByClassName('card'));
-  let game = new MatchAndWin(60, cards); // Total time that the player has to match all cards
+  let game = new MatchAndWin(30, cards); // Total time that the player has to match all cards
 
   overlays.forEach(overlay => {
     overlay.addEventListener('click', () => {
