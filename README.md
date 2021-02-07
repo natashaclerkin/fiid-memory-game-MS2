@@ -16,13 +16,13 @@ The brief was to develop an interactive front-end site which responds to the use
 ---
 # Contents
 
-- [Project Overview](#project-overview)
-- [UX](#ux)
-- [Features](#features)
-- [Testing](#testing)
-- [Technologies Used](#technologies-used)
-- [Deployment](#deployment)
-- [Credits](#credits)
+1. [Project Overview](#project-overview)
+2. [UX](#ux)
+3. [Features](#features)
+4. [Testing](#testing)
+5. [Technologies Used](#technologies-used)
+6. [Deployment](#deployment)
+7. [Credits](#credits)
 
 
 
@@ -40,28 +40,13 @@ The primary goal of the main Fiid website is to inform and direct users to place
 The opportunity to win a discount code incentivizes participation aswell as increasing brand recognition and follower engagement. In order to obtain the discount code, the user has to register through an entry form for lead generation and simultaneously allows the user to sign up to the newsletter. The concept is to offer a discount to all registered users in order to convert them into paying customers.
 
 
-**The business goals of this website are:**
-
-- Market the current offering of Fiid products.
-- Increase customer acquisition.
-- Increase brand recognition and follower engagement. 
-- Make the brand stand out from the swarm of plant-based companies during Veganuary. 
-- Target a younger audience who have more disposible income such as millennials.
-
-**The customer goals of this website are:**
-
-- Obtain a discount towards future orders.
-- Learn about the product offering.
-- Have a good experience while on the site.
-
-
 # UX
 [^ Back To Top ](#contents) 
 ### Strategy
 It's vital as a B2C company to stand out amongst the competition because the B2C space is crowded with competitors. Most users will make their purchase on one of their first few visits so it is so important to grab the user and keep them on the site long enough to place the order. Compelling but minimal text accompanied by lots of imagery is required to keep the user engaged. 
 As the memory game is a huge part of the customer acquisition process, it has to be developed to a high standard and respond correctly to the user's interactions. The overall game will be simple enough for the user to complete in order to reward them for their time and encourage them to place an order.  
 
-#### Ideal users of this website:
+#### Ideal users of the Fiid website:
 - Vegan/health-conscious individuals
 - Working adults who are looking for convenient meal products for themselves or their families 
 - Millennials
@@ -71,16 +56,27 @@ As the memory game is a huge part of the customer acquisition process, it has to
 - Quality, healthy and convenient products
 - Hassle-free ordering
 
+
+**The business goals of this game project are:**
+
+- Market the current offering of Fiid products.
+- Increase customer acquisition.
+- Increase brand recognition and follower engagement. 
+- Make the brand stand out from the swarm of plant-based companies during Veganuary. 
+- Target a younger audience who have more disposible income such as millennials.
+
+**The customer goals of this game project are:**
+
+- Obtain a discount towards future orders.
+- Learn about the product offering and brand.
+- Have a good experience while on the site.
+
 #### This project is the best way to achieve their goals because:
 The market is saturated with plant-based products and the user wants a quality product at a discounted price. The short game makes the company stand out from the crowd and rewards the user if they can remember the brand's offering.
 
 #### User Stories
  
-1. **_As a new visitor to the website,_** I want to find out about the products on offer and why I should purchase from the company as opposed to similar brands so that I can potentially become a customer. 
-
-2. **_As a regular customer of the brand,_** I want to be rewarded for my loyalty so that I can receive discounts/offers on future orders and remain a loyal customer.  
-
-3. **_As a user on the site,_** I want to have an enjoyable and hassle-free experience so that I can potentially place an order.
+"As a general user, I would like to have an **enjoyable experience** playing an easy memory game that provides a **reward** for completing the game and let's me **learn more about the brand.**"
 
 ### Scope
 To achieve the strategic goals, I wanted to include the following features in this production release:
@@ -95,11 +91,11 @@ To achieve the strategic goals, I wanted to include the following features in th
 The user will be presented with a short, simple user-friendly game leaving them with an enjoyable experience, a lasting memory of the 4 Fiid products and hopefully a discount to use at the checkout. 
  
 ### Skeleton
-- [Wireframes](assets/wireframes/wireframes.pdf "Fiid Wireframes"): The project contains the instructions screen, the game screen, gameover screen and win screen.
+- [Wireframes](assets/wireframes/wireframes.pdf "Fiid Wireframes"): The project contains the instructions screen, the game screen, gameover overlay screen and win overlay screen.
 **Please note the finalised project contains slight variations to the original wireframe**
 
 ### Surface 
-As a B2C company, sales are emotionally driven and often as an impulse buy. Branding is a huge factor and emotional triggers lead a customer to purchase a product. It was important to build the memory game on a page that reflected the brand and their product offering. The monochrome colour scheme was implemented along with pops of green to reflect the healthy and fresh products.
+As a B2C company, sales are emotionally driven and often as an impulse buy. Branding is a huge factor and emotional triggers lead a customer to purchase a product. It was important to build the memory game on a page that reflected the brand and their product offering. The Fiid monochrome colour scheme was implemented along with pops of green to reflect the healthy and fresh products.
 The banner assets of fresh produce and company typography was also implemented to integrate the game page as part of the brand and propel the user towards the shop after completion.
 
 ![alt text](assets/wireframes/fiid-color-palette.PNG "Fiid Color Palette")
@@ -117,7 +113,7 @@ The fully responsive site consists of:
 - **Game cards:** Each card has the Fiid logo on the back and contains 1 of 6 Fiid product images to be matched by the user to win the game. The cards have a flip sound effect when selected and turned. When a match is found, a correct match sound effect can be heard. The matched cards remain faceup for product placement.
  
 **_Audio:_**
-- **Background music:** The "Yummy" by Justin Bieber instrumental audio starts when the 'Try your luck' button is selected and ends when the game is won or lost.
+- **Background music:** The "Yummy" by Justin Bieber instrumental audio starts when the 'Try your luck' button is selected and ends when the game is won or lost. The track subliminally conveys the brand/product description by a catchy but relaxing means.
 - **Card flip sound effect:** The sound is executed when a user selects a card. The audio is remeniscent of a playing card being flipped.
 - **Victory sound effect:** The audio is played once all cards have been matched correctly before the timer runs out.
 - **Game Over sound effect:** This audio is triggered when the timer hits zero before all cards have been matched correctly.
