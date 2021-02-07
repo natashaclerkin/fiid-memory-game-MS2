@@ -485,7 +485,7 @@ p {
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops 1440px to 1600px) */
 @media screen and (min-device-width: 1440px) and (max-device-width: 1600px) {
     .page-title {
     padding-top: 90px;
@@ -499,6 +499,7 @@ p {
 }
 }
 
+/* ipads (768px to 1024px) */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) { 
     .page-title {
     padding-top: 280px;

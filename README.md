@@ -3,9 +3,14 @@
 ## Code Institute MS2 Project in Interactive Frontend Development 
 The brief was to develop an interactive front-end site which responds to the users' actions, allowing them to actively engage with data, alter the way the site displays the information to achieve their preferred goals. This website is created for educational purposes.
 
+
+
+<p align="center">
+  <img width="300" src="assets/wireframes/fiid-match-&-win.PNG" alt="Fiid Match & Win logo">
+</p>
+
 [View website in GitHub Pages.](https://natashaclerkin.github.io/fiid-memory-game-MS2/) 
 
-AM I RESPONSIVE IMAGE
 
 
 ---
@@ -104,21 +109,30 @@ The banner assets of fresh produce and company typography was also implemented t
 
 The fully responsive site consists of:
 
-**Instructions overlay screen:** I used an overlay instead of a separate page so the user can slightly see the game behind it and to give the user an indication like there are less steps to receive their discount. This includes three straightforward instructions with the main action highlighted for better UX and is accompanied by the enticing 'Try your luck' button.
-**Main page:** Once the 'Try your luck' button is selected, the page loads to reveal the navbar, background image with company products, gameboard with cards, timer, flip counter and background music. The game starts automatically.
-**Timer:** The time counts down from 30 seconds and displays the time remaining for the user to complete the game.
-**Flip counter:** This counts the number of flips the user has made, allowing them to monitor their progress.
-**Gameboard:** This displays 12 game cards face down ready to be clicked.
-**Game cards:** Each card has the Fiid logo on the back and contains 1 of 6 Fiid product images to be matched by the user to win the game. The cards have a flip sound effect when selected and turned. When a match is found, a correct match sound effect can be heard. The matched cards remain faceup for product placement.
+**_Game Page:_**
+- **Main page content:** Once the 'Try your luck' button is selected, the page loads to reveal the navbar, background image with company products, gameboard with cards, timer, flip counter and background music. The game starts automatically.
+- **Timer:** The time counts down from 30 seconds and displays the time remaining for the user to complete the game.
+- **Flip counter:** This counts the number of flips the user has made, allowing them to monitor their progress.
+- **Gameboard:** This displays 12 game cards face down ready to be clicked.
+- **Game cards:** Each card has the Fiid logo on the back and contains 1 of 6 Fiid product images to be matched by the user to win the game. The cards have a flip sound effect when selected and turned. When a match is found, a correct match sound effect can be heard. The matched cards remain faceup for product placement.
  
+**_Audio:_**
+- **Background music:** The "Yummy" by Justin Bieber instrumental audio starts when the 'Try your luck' button is selected and ends when the game is won or lost.
+- **Card flip sound effect:** The sound is executed when a user selects a card. The audio is remeniscent of a playing card being flipped.
+- **Victory sound effect:** The audio is played once all cards have been matched correctly before the timer runs out.
+- **Game Over sound effect:** This audio is triggered when the timer hits zero before all cards have been matched correctly.
 
-
-
-
+**_Overlays:_**
+- **Instructions overlay:** I used an overlay instead of a separate page so the user can slightly see the game behind it and to give the user an indication like there are less steps to receive their discount. This includes three straightforward instructions with the main action highlighted for better UX and is accompanied by the enticing 'Try your luck' button.
+- **Victory overlay:** Along with the audio, the overlay and modal is executed when the user wins the game. They are presented with the modal which requests their email to receive their discount code. They are also offered the option to subscribe to the newsletter. Once they have completed the form, a message appears that they have been sent their discount code via email. The user is invited to shop on the main website or challenge their friends to he game via social media or email. 
+- **Game Over overlay:** Accompanied by the Game Over audio, the overlay is triggered when the user loses the game. They are presented with the button to 'Try again'. 
 
 
 ### Features Left to Implement
-Due to time restraints, I was unable to include the following features but hope to implement them in a future release:
+Due to time restraints, I was unable to include the following features but hope to implement them in future releases:
+- **Score Board:** To allow users to see where they ranked in terms of other players and the ability to share this score with their friends online.
+- **Levels:** If extra levels are to be added (i.e additional cards or difficulty options) then free products can be offered to the user as a reward for the added time spent on the game.
+- **Mute Button:** If further levels are implemented, then a mute button would be required as the user is spending more of their free time on the game. This means UX is even more significant and any possible deterrants such as audio need to be offered as option to the user to avoid them exiting the game. 
 
 # Technologies Used
 [^ Back To Top ](#contents) 
@@ -170,77 +184,10 @@ In the construction of this project I have utilised the following languages, fra
 
 
 # Testing
-[^ Back To Top ](#contents) 
+[^ Back To Top ](#contents)
 
-I asked my family, friends and fellow students to test their site on different devices to locate potential bugs. The website was tested over multiple devices (Samsung Galaxy A7, Xiaomi Mi 10, iPhone 5, 6, 7, 11: Safari and Chrome, iPad, Google Nexus) and many browsers (Chrome, Firefox, Safari and Edge) to guarantee responsive behaviour and compatibility.  
+The Testing process has been documented in this [testing.md file](/testing.md "testing.md File")
 
-The following actions were taken by each tester and the results noted below:
-
-| ACTION      | TEST RESULT      |
-| ----------- | ----------- |
-| **Open the Fiid Match & Win website**    | *"The Link opens to main landing page with game instructions."*       |
-| **Read game instructions**   | *"Instructions are clear and concise."*       |
-| **Select 'Try Your Luck' button to start the game**  | *"The button rediverts to the gameboard."*
-| **Let the timer run out to reach Game Over screen and select 'Try Again' button**  | *"When the timer reaches zero and the cards haven't been all matched, the game ends with Game Over screen and audio with the option to play again"*        |        |
-| **Match all pairs to complete the game in 30 seconds**  | *"The new screen is presented with flips reset to 0 and timer back to 30. All cards are matched on time and a new screen with a congratulations audio and message pops up."*        |
-| **Responsive design?**  | *Text*        |
-| **User friendly display?**  | *Text*        |
-| **Interactive objects working correcly?**  | *Text*        |
-| **Music & sound effects work on device?**  | *Text*        |
-| **Links divert to expected destinations?**  | *Text*        |
-| **Functional subscription form?**  | *Text*        |
-| **Ability to share game on social media & via email?**  | *Text*        |
-
-
-cxl click off win modal issue
-dynamic html win modal
-
-
-
-## UX stories testing
-1. **_As a new visitor to the website,_** I want to find out about the products on offer and why I should purchase from the company as opposed to similar brands so that I can potentially become a customer. 
-
-2. **_As a regular customer of the brand,_** I want to be rewarded for my loyalty so that I can receive discounts/offers on future orders and remain a loyal customer.  
-
-3. **_As a user on the site,_** I want to have an enjoyable and hassle-free experience so that I can potentially place an order.
-
-
-
-## Validation
-I used the [W3C Markup Validation Service](https://validator.w3.org/) to check the Markup and [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to check the CSS validity and [JS Hint Validator](https://jshint.com/) to check the JS rules of the project. After fixing the errors on all testing sites, the sites eventually passed validation.
-
-![alt text](assets/wireframes/html-validation.PNG "HTML Validation Final Results")
-
-![alt text](assets/wireframes/css-validation.PNG "CSS Validation Final Results")
-
-![alt text](assets/wireframes/js-validation.PNG "JS Validation Final Results")
-
-The [Color Contrast Accessibility Validator](https://color.a11y.com/) was used to test for colour contrast on the project.
-
-![alt text](assets/wireframes/color-validation-1.PNG "Color Validation Initial Results")
-
-I found one of the original green shades used for the buttons wasn't working from an accessibility standpoint. I used the contrast testing feature to choose a hex color that would pass the validation tests.
-
-![alt text](assets/wireframes/color-validation-2.PNG "Color Validation Testing")
-
-When I decided on the final shade, I re-ran the tests confirming no further colour contasting issues to be found and the overall site complies with accessibility standards.
-
-![alt text](assets/wireframes/color-validation-3.PNG "Color Validation Final Results")
-
-
-In order to have optimal user experience, the site needs to be accessible. I would continually run the URL through **WAVE Web Accessibility Evaluation Tool** to highlight potential issues. I continued until no further errors or alerts were given.
-
-![alt text](assets/wireframes/wave-validation-1.PNG "Wave Accessibility Test results")
-
-I constantly tested the code in [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools) and often ran Lighthouse audits to identify and fix issues that affected the site's performance, accessibility and user experience. 
-
-![alt text](assets/wireframes/lighthouse-audit-1.PNG "Lighthouse Testing Initial Results")
-
-This highlighted areas that require improvement for validation. For example, Accessibility issues pointed to areas such as inadequate color contrast ratio which I tested and fixed in **Color Contrast Accessibility Validator**.
-Also, a Cross-Origin security issue pertaining to Best Practices was simply resolved via adding `rel= noreferrer` to external links. I also ensured all the necessary aria labels, alt tags etc were present to conform to best practices. 
-Through constant testing, I was able to achieve almost 100% on all metrics for optimum Performance, Accessibility, SEO and Best Practices.  
-
-![alt text](assets/wireframes/lighthouse-audit-2.PNG "Lighthouse Testing Final Run Results")
 
 
 
