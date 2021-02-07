@@ -1,17 +1,9 @@
 # Fiid Match & Win Memory Game
 
 ## Code Institute MS2 Project in Interactive Frontend Development 
-The brief was to develop an interactive front-end site which responds to the users' actions, allowing them to actively engage with data, alter the way the site displays the information to achieve their preferred goals. This website is created for educational purposes.
+The brief was to develop an interactive front-end site that responds to the users' actions, allowing them to actively engage with data, alter the way the site displays the information to achieve their preferred goals. This website is created for educational purposes.
 
-
-
-<p align="center">
-  <img width="300" src="assets/wireframes/fiid-match-&-win.PNG" alt="Fiid Match & Win logo">
-</p>
-
-[View website in GitHub Pages.](https://natashaclerkin.github.io/fiid-memory-game-MS2/) 
-
-
+[View website in GitHub Pages.](https://natashaclerkin.github.io/fiid-memory-game-MS2/)
 
 ---
 # Contents
@@ -25,26 +17,29 @@ The brief was to develop an interactive front-end site which responds to the use
 7. [Credits](#credits)
 
 
-
-
-
-
 # Project Overview
 [^ Back To Top ](#contents) 
 ## [Fiid Match & Win Memory Game](https://natashaclerkin.github.io/fiid-memory-game-MS2/) 
 
-Irish plant-based food B2C company, Fiid, create crave-worthy, convenient vegan meals. They are looking to further brand awareness, increase customer acquisition and maintain brand loyalty. They would like to drive sales by creating a timed memory game for users to win a discount code for their next online purchase. The user has to match two of each product type before the time runs out. If they are successful, they are able to subscribe to earn a discount code which will be valid for their next purchase. Users have the ability to share the game with their followers on social media. The target audience are health-conscious individuals, particularly the 18-35 millennial bracket who like games and discounts. 
+<p align="center">
+  <img width="300" src="assets/wireframes/fiid-match-&-win.PNG" alt="Fiid Match & Win logo">
+</p>
 
-The primary goal of the main Fiid website is to inform and direct users to place an order. I wanted to create an experience that integrates with their main website. This would include instructions on how the game works, how to obtain the discount code through a short signup form and how they can spread the word through social media. There would also be links to the company's social media channels and most importantly the main online store. This would allow users to learn more about the products, place an order or share the game with their followers on their own channels.
+ 
+Irish plant-based food B2C company, Fiid, create crave-worthy, convenient vegan meals. They are looking to further brand awareness, increase customer acquisition and maintain brand loyalty. They would like to drive sales by creating a timed memory game for users to win a discount code for their next online purchase. The user has to match two of each product type before the time runs out. If they are successful, they can subscribe to earn a discount code which will be valid for their next purchase. Users have the ability to share the game with their followers on social media. The target audience is health-conscious individuals, particularly the 18-35 millennial bracket who like games and discounts. 
 
-The opportunity to win a discount code incentivizes participation aswell as increasing brand recognition and follower engagement. In order to obtain the discount code, the user has to register through an entry form for lead generation and simultaneously allows the user to sign up to the newsletter. The concept is to offer a discount to all registered users in order to convert them into paying customers.
+The primary goal of the main Fiid website is to inform and direct users to place an order. I wanted to create an experience that integrates with their main website. This would include instructions on how the game works, how to obtain the discount code through a short signup form and how they can spread the word through social media. There would also be links to the company's social media channels and most importantly the main online store. This would allow users to learn more about the products, place an order or share the game with their followers on their channels.
+
+The opportunity to win a discount code incentivizes participation as well as increasing brand recognition and follower engagement. To obtain the discount code, the user has to register through an entry form for lead generation and simultaneously allows the user to sign up to the newsletter. The concept is to offer a discount to all registered users to convert them into paying customers.
 
 
 # UX
 [^ Back To Top ](#contents) 
+
+![alt text](assets/wireframes/fiid-website.PNG "Fiid Main Website")
 ### Strategy
 It's vital as a B2C company to stand out amongst the competition because the B2C space is crowded with competitors. Most users will make their purchase on one of their first few visits so it is so important to grab the user and keep them on the site long enough to place the order. Compelling but minimal text accompanied by lots of imagery is required to keep the user engaged. 
-As the memory game is a huge part of the customer acquisition process, it has to be developed to a high standard and respond correctly to the user's interactions. The overall game will be simple enough for the user to complete in order to reward them for their time and encourage them to place an order.  
+As the memory game is a huge part of the customer acquisition process, it has to be developed to a high standard and respond correctly to the user's interactions. The overall game will be simple enough for the user to complete to reward them for their time and encourage them to place an order.  
 
 #### Ideal users of the Fiid website:
 - Vegan/health-conscious individuals
@@ -63,11 +58,11 @@ As the memory game is a huge part of the customer acquisition process, it has to
 - Increase customer acquisition.
 - Increase brand recognition and follower engagement. 
 - Make the brand stand out from the swarm of plant-based companies during Veganuary. 
-- Target a younger audience who have more disposible income such as millennials.
+- Target a younger audience who have more disposable income such as millennials.
 
 **The customer goals of this game project are:**
 
-- Obtain a discount towards future orders.
+- Obtain a discount for future orders.
 - Learn about the product offering and brand.
 - Have a good experience while on the site.
 
@@ -76,7 +71,7 @@ The market is saturated with plant-based products and the user wants a quality p
 
 #### User Stories
  
-"As a general user, I would like to have an **enjoyable experience** playing an easy memory game that provides a **reward** for completing the game and let's me **learn more about the brand.**"
+"As a general user, I would like to have an **enjoyable experience** playing an easy memory game that provides a **reward** for completing the game and lets me **learn more about the brand.**"
 
 ### Scope
 To achieve the strategic goals, I wanted to include the following features in this production release:
@@ -91,17 +86,20 @@ To achieve the strategic goals, I wanted to include the following features in th
 The user will be presented with a short, simple user-friendly game leaving them with an enjoyable experience, a lasting memory of the 4 Fiid products and hopefully a discount to use at the checkout. 
  
 ### Skeleton
-- [Wireframes](assets/wireframes/wireframes.pdf "Fiid Wireframes"): The project contains the instructions screen, the game screen, gameover overlay screen and win overlay screen.
+- [Wireframes](assets/wireframes/wireframes.pdf "Fiid Wireframes"): The project contains the instructions screen, the game screen, game over overlay screen and win overlay screen.
 **Please note the finalised project contains slight variations to the original wireframe**
 
 ### Surface 
-As a B2C company, sales are emotionally driven and often as an impulse buy. Branding is a huge factor and emotional triggers lead a customer to purchase a product. It was important to build the memory game on a page that reflected the brand and their product offering. The Fiid monochrome colour scheme was implemented along with pops of green to reflect the healthy and fresh products.
-The banner assets of fresh produce and company typography was also implemented to integrate the game page as part of the brand and propel the user towards the shop after completion.
+As a B2C company, sales are emotionally driven and often as an impulse buy. Branding is a huge factor and emotional triggers lead a customer to purchase a product. It was important to build the memory game on a page that reflected the brand and its product offering. The Fiid brand monochrome colour scheme was implemented along with pops of green to reflect the healthy and fresh products.
+The banner assets of fresh produce and company typography were also implemented to integrate the game page as part of the brand and propel the user towards the shop after completion.
+I wanted to use the closest type-face to the main Fiid site. Upon research, I found the closest font was `'Source Sans Pro'` so I used this font along with `sans-serif;` as a backup font to maintain the clean-cut image.
 
 ![alt text](assets/wireframes/fiid-color-palette.PNG "Fiid Color Palette")
 
 # Features
 [^ Back To Top ](#contents) 
+
+![alt text](assets/wireframes/fiid-instructions.PNG "Fiid Instructions Screen")
 
 The fully responsive site consists of:
 
@@ -111,24 +109,29 @@ The fully responsive site consists of:
 - **Flip counter:** This counts the number of flips the user has made, allowing them to monitor their progress.
 - **Gameboard:** This displays 12 game cards face down ready to be clicked.
 - **Game cards:** Each card has the Fiid logo on the back and contains 1 of 6 Fiid product images to be matched by the user to win the game. The cards have a flip sound effect when selected and turned. When a match is found, a correct match sound effect can be heard. The matched cards remain faceup for product placement.
- 
+
+![alt text](assets/wireframes/fiid-gameplay.PNG "Fiid Gameplay") 
+
 **_Audio:_**
 - **Background music:** The "Yummy" by Justin Bieber instrumental audio starts when the 'Try your luck' button is selected and ends when the game is won or lost. The track subliminally conveys the brand/product description by a catchy but relaxing means.
-- **Card flip sound effect:** The sound is executed when a user selects a card. The audio is remeniscent of a playing card being flipped.
+- **Card flip sound effect:** The sound is executed when a user selects a card. The audio is reminiscent of a real playing card being flipped.
 - **Victory sound effect:** The audio is played once all cards have been matched correctly before the timer runs out.
 - **Game Over sound effect:** This audio is triggered when the timer hits zero before all cards have been matched correctly.
 
+![alt text](assets/wireframes/fiid-gameover.PNG "Fiid Gameover Screen")
+
 **_Overlays:_**
-- **Instructions overlay:** I used an overlay instead of a separate page so the user can slightly see the game behind it and to give the user an indication like there are less steps to receive their discount. This includes three straightforward instructions with the main action highlighted for better UX and is accompanied by the enticing 'Try your luck' button.
-- **Victory overlay:** Along with the audio, the overlay and modal is executed when the user wins the game. They are presented with the modal which requests their email to receive their discount code. They are also offered the option to subscribe to the newsletter. Once they have completed the form, a message appears that they have been sent their discount code via email. The user is invited to shop on the main website or challenge their friends to he game via social media or email. 
+- **Instructions overlay:** I used an overlay instead of a separate page so the user can slightly see the game behind it and to give the user an indication like there are fewer steps to receive their discount. This includes three straightforward instructions with the main action highlighted for better UX and is accompanied by the enticing 'Try your luck' button.
+- **Victory overlay:** Along with the audio, the overlay and modal are executed when the user wins the game. They are presented with the modal which requests their email to receive their discount code. They are also offered the option to subscribe to the newsletter. Once they have completed the form, a message appears that they have been sent their discount code via email. The user is invited to shop on the main website or challenge their friends to the game via social media or email. 
 - **Game Over overlay:** Accompanied by the Game Over audio, the overlay is triggered when the user loses the game. They are presented with the button to 'Try again'. 
 
+![alt text](assets/wireframes/fiid-shopshare.PNG "Fiid Shop and Share Screen")
 
 ### Features Left to Implement
 Due to time restraints, I was unable to include the following features but hope to implement them in future releases:
 - **Score Board:** To allow users to see where they ranked in terms of other players and the ability to share this score with their friends online.
 - **Levels:** If extra levels are to be added (i.e additional cards or difficulty options) then free products can be offered to the user as a reward for the added time spent on the game.
-- **Mute Button:** If further levels are implemented, then a mute button would be required as the user is spending more of their free time on the game. This means UX is even more significant and any possible deterrants such as audio need to be offered as option to the user to avoid them exiting the game. 
+- **Mute Button:** If further levels are implemented, then a mute button would be required as the user is spending more of their free time on the game. This means UX is even more significant and any possible deterrents (i.e. audio) need to be offered additionally and within the user's control to avoid them exiting the game. 
 
 # Technologies Used
 [^ Back To Top ](#contents) 
@@ -223,14 +226,14 @@ My project was developed using the IDE, Gitpod. I deployed my website from the G
 - Card flip sound effect - [from Freesound.org](https://freesound.org/people/f4ngy/sounds/240776/)
 - Correct card match sound effect - [from Freesound.org](https://freesound.org/people/ertfelda/sounds/243701/)
 - Victory sound effect - [from Freesound.org](https://freesound.org/people/unadamlar/sounds/341985/)
-- Gameover sound effect - [from Freesound.org](https://mixkit.co/free-sound-effects/game-over/)
+- Game over sound effect - [from Freesound.org](https://mixkit.co/free-sound-effects/game-over/)
  
 
 ### Acknowledgements
 
 I took inspiration from the following sources however I did implement my own custom code with each snippet also:
 
-- I undertook alot of research into JavaScript game development through reading material and watching tutorials from [Portexe](https://portexe.com/), [Code Resources](https://www.ci-resources.online/), [Scotch.io](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript), [Dribbble](https://dribbble.com/tags/memory_game), [Wes Bos](https://courses.wesbos.com), [Watch and Code](https://watchandcode.com/courses), [Dev.to](https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j).
+- I undertook a significant amount of research into JavaScript game development through reading material and watching tutorials from [Portexe](https://portexe.com/), [Code Resources](https://www.ci-resources.online/), [Scotch.io](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript), [Dribbble](https://dribbble.com/tags/memory_game), [Wes Bos](https://courses.wesbos.com), [Watch and Code](https://watchandcode.com/courses), [Dev.to](https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j).
 - I practiced JS and the research material on [W3 Schools](https://www.w3schools.com/) and [CodePen](https://codepen.io/).  
 - Bootstrap was used for the [Navbar](https://getbootstrap.com/docs/4.4/components/navbar/) and the [Loading Spinner](https://getbootstrap.com/docs/4.4/components/spinners/).
 - I implemented the [Fisher–Yates Shuffle](https://bost.ocks.org/mike/shuffle/) in my game to randomize the card shuffle.
@@ -241,3 +244,6 @@ I took inspiration from the following sources however I did implement my own cus
 I would like to thank my mentor Guido Cecilio for his support in helping me to understand JavaScript and guidance throughout the project. 
 
 Last but certainly not least, I'd like to thank the amazing Fiid for their use of content, imagery and real-life business concept for the project. I am a happy customer and was only too excited to use them and their yummy pouches as the source material for my project!
+
+
+[^ Back To Top ](#contents) 
