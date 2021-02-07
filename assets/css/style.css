@@ -12,16 +12,12 @@
 body {
 	margin: 0;
 	background: url("../images/memorygame-background.png")no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	font-family: 'Source Sans Pro', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	min-height: 100vh;
 }
-
 
 /* || SITEWIDE */
 
@@ -180,7 +176,9 @@ h4 {
 }
 
 .card-value {
-	transform: scale(0.25);
+	-webkit-transform: scale(0.25);
+	    -ms-transform: scale(0.25);
+	        transform: scale(0.25);
 }
 
 .card-back {
@@ -489,10 +487,14 @@ p {
 		width: 150px;
 	}
 	.card-value {
-		transform: scale(0.32);
+		-webkit-transform: scale(0.32);
+		    -ms-transform: scale(0.32);
+		        transform: scale(0.32);
 	}
 	.fiid {
-		align-self: center;
+		-ms-flex-item-align: center;
+		    -ms-grid-row-align: center;
+		    align-self: center;
 	}
 }
 

@@ -12,7 +12,7 @@
 [^ Back To Top ](#project-testing)
 ### Validation Programs
 
-I used the [W3C Markup Validation Service](https://validator.w3.org/) to check the Markup and [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to check the CSS validity and [JS Hint Validator](https://jshint.com/) to check the JS rules of the project. After fixing the errors on all testing sites, the sites eventually passed validation.
+I used the [W3C Markup Validation Service](https://validator.w3.org/) to check the Markup, [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to check the CSS validity and [JS Hint Validator](https://jshint.com/) to check the JS rules of the project. After fixing the errors on all testing sites, the sites eventually passed validation.
 
 ![alt text](assets/wireframes/html-validation.PNG "HTML Validation Final Results")
 
@@ -33,7 +33,7 @@ When I decided on the final shade, I re-ran the tests confirming no further colo
 ![alt text](assets/wireframes/color-validation-3.PNG "Color Validation Final Results")
 
 
-In order to have optimal user experience, the site needs to be accessible. I would continually run the URL through **WAVE Web Accessibility Evaluation Tool** to highlight potential issues. I continued until no further errors or alerts were given.
+In order to have optimal user experience, the site needs to be accessible for everyone. I would continually run the URL through **WAVE Web Accessibility Evaluation Tool** to highlight potential issues. I continued until no further errors or alerts were given.
 
 ![alt text](assets/wireframes/wave-validation-1.PNG "Wave Accessibility Test results")
 
@@ -41,8 +41,8 @@ I constantly tested the code in [Chrome Dev Tools](https://developers.google.com
 
 ![alt text](assets/wireframes/lighthouse-audit-1.PNG "Lighthouse Testing Initial Results")
 
-This highlighted areas that require improvement for validation. For example, Accessibility issues pointed to areas such as inadequate color contrast ratio which I tested and fixed in **Color Contrast Accessibility Validator**.
-Also, a Cross-Origin security issue pertaining to Best Practices was simply resolved via adding `rel= noreferrer` to external links. I also ensured all the necessary aria labels, alt tags etc were present to conform to best practices. 
+This highlighted the areas that required improvement for validation. For example, Accessibility issues pointed to areas such as inadequate color contrast ratio which I tested and fixed in **Color Contrast Accessibility Validator**.
+Also, a Cross-Origin security issue pertaining to Best Practices was simply resolved via adding `rel= noreferrer` to all external links. I also ensured all the necessary aria labels, alt tags etc were present to conform to best practices. 
 Through constant testing, I was able to achieve almost 100% on all metrics for optimum Performance, Accessibility, SEO and Best Practices.  
 
 ![alt text](assets/wireframes/lighthouse-audit-2.PNG "Lighthouse Testing Final Run Results")
@@ -67,11 +67,16 @@ I asked my family, friends and fellow students to test their site on different d
 | **Select 'Try Your Luck' button to start the game**  | The button should redivert to the gameboard.  | 
 | **Check background music is audible, timer and flips are operating and cards are face-down once the game has commenced**  | When the 'Try Your Luck' button is clicked, the overlay should disappear and the main game page should load. The background music should begin playing, the timer should start counting down from 30 and all 12 cards should be face-down until selected.  
 | **Let the timer run out to reach the Game Over screen and select 'Try Again' button**  |  When the timer reaches zero and the cards haven't been all matched, the game should end with the Game Over overlay screen and audio with the flashing 'Try Again' button inviting the user to play again. | 
-| **Restart the game and match all pairs to complete the game in 30 seconds**  | The new screen should be presented with the flips total reset to 0 and the timer reset back to 30. When a card is selected, a flip sound effect should be heard and the card should rotate 180 degrees to become face-up and reveal a Fiid product. If the two selected cards are not a match, they should return to the face-down position after being visible long enough so the user can remember the cards just selected. Once a pair is matched, a correct sound alert should be audible and the pair should remain face-up. All matched pairs should be disabled and shouldn't have the ability to be flipped again. Repeated clicks on the matching pairs should not affect the flip counter. If all cards are matched within the timeframe, a new screen with a congratulations sound effect and message should pop up.| 
+| **Restart the game and match all pairs to complete the game in 30 seconds**  | The new screen should be presented with the flips total reset to 0 and the timer reset back to 30. When a card is selected, a flip sound effect should be heard and the card should rotate 180 degrees to become face-up and reveal a Fiid product. If the two selected cards are not a match, they should return to the face-down position after being visible long enough so the user can remember the cards they just selected. Once a pair is matched, a correct sound alert should be audible and the pair should remain face-up. All matched pairs should be disabled and shouldn't have the ability to be flipped again. Repeated clicks on the matching pairs should not affect the flip counter. If all cards are matched within the timeframe, a new screen with a congratulations sound effect and message should pop up.| 
 | **Input email to receive the discount and sign up for the newsletter**  | Once a correct email is entered and submitted, a loading icon will appear to indicate that an action has occurred. A message should then appear confirming that the discount code has been sent to the user's email address. Another message should be present to invite the user to explore the main Fiid website or share the link to the game on social media. 
-| **Test share URLs and website link**  | The share buttons should bring the user directly to a new post with the link pre-typed to the selected social media channel. The email button should open the user's email provider if pre-installed with the subject line and body pre-filled. The 'Shop Fiid' link should divert the user to the Fiid online store.  
+| **Test share URLs and website link**  | The share buttons should bring the user directly to a new post with the link pre-typed to the selected social media channel. The email button should open the user's email provider (if pre-installed) with the subject line and body pre-filled. The 'Shop Fiid' link should divert the user to the Fiid online store.  
 
-Several minor bugs or issues were reported during development and testing but the majority were easily fixed with assistance from **Chrome Dev Tools** and **Unicorn Revealer** to locate the source. Any significant bugs are listed in the section below.
+During the initial testing phase, I received consistent feedback from testers that the 60 second time limit was too long and unnecessary and advice to make the game slightly more challenging by reducing it to 30 seconds.  Also, the original matched card dancing animation was cited as too distracting for most users so I decided to apply the feedback from early user testing to make an even more user-friendly product. 
+
+All other features received positive feedback so no further changes were implemented to the current features.
+
+Several minor bugs or issues were reported during development and testing but the majority were easily fixed with assistance from **Chrome Dev Tools** and **Unicorn Revealer** to locate the source. Any significant bugs are listed in the section below. 
+
 
 
 ## Bugs

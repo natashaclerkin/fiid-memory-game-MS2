@@ -26,7 +26,7 @@ The brief was to develop an interactive front-end site that responds to the user
 </p>
 
  
-Irish plant-based food B2C company, Fiid, create crave-worthy, convenient vegan meals. They are looking to further brand awareness, increase customer acquisition and maintain brand loyalty. They would like to drive sales by creating a timed memory game for users to win a discount code for their next online purchase. The user has to match two of each product type before the time runs out. If they are successful, they can subscribe to earn a discount code which will be valid for their next purchase. Users have the ability to share the game with their followers on social media. The target audience is health-conscious individuals, particularly the 18-35 millennial bracket who like games and discounts. 
+Irish B2C company, Fiid, create crave-worthy, convenient plant-based meals. They are looking to further brand awareness, increase customer acquisition and maintain brand loyalty. They would like to drive sales by creating a timed memory game for users to win a discount code for their next online purchase. The user has to match two of each product type before the time runs out. If they are successful, they can subscribe to earn a discount code which will be valid for their next purchase. Users have the ability to share the game with their followers on social media. The target audience is health-conscious individuals, particularly the 18-35 millennial bracket who like games and discounts. 
 
 The primary goal of the main Fiid website is to inform and direct users to place an order. I wanted to create an experience that integrates with their main website. This would include instructions on how the game works, how to obtain the discount code through a short signup form and how they can spread the word through social media. There would also be links to the company's social media channels and most importantly the main online store. This would allow users to learn more about the products, place an order or share the game with their followers on their channels.
 
@@ -76,23 +76,24 @@ The market is saturated with plant-based products and the user wants a quality p
 ### Scope
 To achieve the strategic goals, I wanted to include the following features in this production release:
 
-- Instructions for the game with inviting 'try your luck' **button**
-- Simplistic, interactive **JavaScript-led timed memory game** using  - including timer and flip counter
+- Concise **Instructions overlay** for the game with an **inviting 'try your luck' button**
+- Simplistic, heavily-branded interactive **JavaScript-led memory game** - including timer, flip counter, sound effects and background music
 - Header containing company logo and **Nav bar** with minimal content to not distract player- i.e. just necessary links such as social media and link to main Fiid site
 - **Background image** featuring company products
 - Short **signup form** for users to complete in order to receive a discount
 
 ### Structure 
-The user will be presented with a short, simple user-friendly game leaving them with an enjoyable experience, a lasting memory of the 4 Fiid products and hopefully a discount to use at the checkout. 
+The user will be presented with a short, simple user-friendly game leaving them with an enjoyable experience, a lasting memory of the 4 Fiid products and hopefully a discount to use at the checkout on the main Fiid website. 
  
 ### Skeleton
-- [Wireframes](assets/wireframes/wireframes.pdf "Fiid Wireframes"): The project contains the instructions screen, the game screen, game over overlay screen and win overlay screen.
+- [Wireframes](assets/wireframes/wireframes.pdf "Fiid Wireframes"): The project contains the instructions overlay screen, the game screen, game over overlay screen and win overlay screen.
 **Please note the finalised project contains slight variations to the original wireframe**
 
 ### Surface 
 As a B2C company, sales are emotionally driven and often as an impulse buy. Branding is a huge factor and emotional triggers lead a customer to purchase a product. It was important to build the memory game on a page that reflected the brand and its product offering. The Fiid brand monochrome colour scheme was implemented along with pops of green to reflect the healthy and fresh products.
 The banner assets of fresh produce and company typography were also implemented to integrate the game page as part of the brand and propel the user towards the shop after completion.
 I wanted to use the closest type-face to the main Fiid site. Upon research, I found the closest font was `'Source Sans Pro'` so I used this font along with `sans-serif;` as a backup font to maintain the clean-cut image.
+I ended up creating and using the below palette once it had passed rigorous Accessibility testing in **A11y's Color Contrast Accessibility Validator**. 
 
 ![alt text](assets/wireframes/fiid-color-palette.PNG "Fiid Color Palette")
 
@@ -107,7 +108,7 @@ The fully responsive site consists of:
 - **Main page content:** Once the 'Try your luck' button is selected, the page loads to reveal the navbar, background image with company products, gameboard with cards, timer, flip counter and background music. The game starts automatically.
 - **Timer:** The time counts down from 30 seconds and displays the time remaining for the user to complete the game.
 - **Flip counter:** This counts the number of flips the user has made, allowing them to monitor their progress.
-- **Gameboard:** This displays 12 game cards face down ready to be clicked.
+- **Gameboard:** This displays 12 game cards face-down ready to be clicked.
 - **Game cards:** Each card has the Fiid logo on the back and contains 1 of 6 Fiid product images to be matched by the user to win the game. The cards have a flip sound effect when selected and turned. When a match is found, a correct match sound effect can be heard. The matched cards remain faceup for product placement.
 
 ![alt text](assets/wireframes/fiid-gameplay.PNG "Fiid Gameplay") 
@@ -121,7 +122,7 @@ The fully responsive site consists of:
 ![alt text](assets/wireframes/fiid-gameover.PNG "Fiid Gameover Screen")
 
 **_Overlays:_**
-- **Instructions overlay:** I used an overlay instead of a separate page so the user can slightly see the game behind it and to give the user an indication like there are fewer steps to receive their discount. This includes three straightforward instructions with the main action highlighted for better UX and is accompanied by the enticing 'Try your luck' button.
+- **Instructions overlay:** I used an overlay instead of a separate page so the user can slightly see the game behind it and to give the user the impression there are fewer steps to receive their discount. This includes three straightforward instructions with the main action highlighted for better UX and is accompanied by the enticing, glowing 'Try your luck' button.
 - **Victory overlay:** Along with the audio, the overlay and modal are executed when the user wins the game. They are presented with the modal which requests their email to receive their discount code. They are also offered the option to subscribe to the newsletter. Once they have completed the form, a message appears that they have been sent their discount code via email. The user is invited to shop on the main website or challenge their friends to the game via social media or email. 
 - **Game Over overlay:** Accompanied by the Game Over audio, the overlay is triggered when the user loses the game. They are presented with the button to 'Try again'. 
 
@@ -139,7 +140,7 @@ Due to time restraints, I was unable to include the following features but hope 
 In the construction of this project I have utilised the following languages, frameworks, libraries and tools:
 - **HTML5,** **CSS3** and **JavaScript** programming languages
 - [Bootstrap v4.5.3](https://getbootstrap.com)
-    - The project used **Bootstrap** to simplify the website layout by integrating the Congrats Modal and Navbar. Also to provide overall responsive behaviour on all devices.
+    - The project used **Bootstrap** to simplify the website layout by integrating the Congrats Modal and Navbar. 
 - [GitPod](https://www.gitpod.io/)
     - I used **GitPod** as the development environment for my website. I also used Git for Version Control in the project.
 - [GitHub](https://www.github.com/)
@@ -185,7 +186,7 @@ In the construction of this project I have utilised the following languages, fra
 # Testing
 [^ Back To Top ](#contents)
 
-The Testing process has been documented in this [testing.md file](/testing.md "testing.md File")
+The Testing process has been documented in this [testing.md file.](/testing.md "testing.md File")
 
 
 
@@ -233,17 +234,17 @@ My project was developed using the IDE, Gitpod. I deployed my website from the G
 
 I took inspiration from the following sources however I did implement my own custom code with each snippet also:
 
-- I undertook a significant amount of research into JavaScript game development through reading material and watching tutorials from [Portexe](https://portexe.com/), [Code Resources](https://www.ci-resources.online/), [Scotch.io](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript), [Dribbble](https://dribbble.com/tags/memory_game), [Wes Bos](https://courses.wesbos.com), [Watch and Code](https://watchandcode.com/courses), [Dev.to](https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j).
+- I undertook a significant amount of research into JavaScript game development through reading material and watching tutorials from [Portexe](https://portexe.com/), [Code Resources](https://www.ci-resources.online/), [Scotch.io](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript), [Dribbble](https://dribbble.com/tags/memory_game), [Wes Bos](https://courses.wesbos.com), [Watch and Code](https://watchandcode.com/courses) and [Dev.to](https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j).
 - I practiced JS and the research material on [W3 Schools](https://www.w3schools.com/) and [CodePen](https://codepen.io/).  
-- Bootstrap was used for the [Navbar](https://getbootstrap.com/docs/4.4/components/navbar/) and the [Loading Spinner](https://getbootstrap.com/docs/4.4/components/spinners/).
+- Bootstrap was used for the [navbar](https://getbootstrap.com/docs/4.4/components/navbar/) and the [loading spinner](https://getbootstrap.com/docs/4.4/components/spinners/).
 - I implemented the [Fisher–Yates Shuffle](https://bost.ocks.org/mike/shuffle/) in my game to randomize the card shuffle.
-- I came across this [Glowing Button Animation](https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html) when I was searching for inspiration for enticing 'Try your luck' & 'Try Again' buttons.
-- During development I found solutions to smaller coding queries in Stack Overflow as well as when I had difficulties with the [Modal Positioning](https://stackoverflow.com/questions/33184157/bootstrap-modal-height-as-per-window-height) and [Preventing the win modal from disappearing when clicking outside](https://stackoverflow.com/questions/16152073/prevent-bootstrap-modal-from-disappearing-when-clicking-outside-or-pressing-esca)
+- I came across this [glowing button animation](https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html) when I was searching for inspiration for enticing 'Try your luck' & 'Try Again' buttons.
+- During development I found solutions to smaller coding queries in Stack Overflow as well as when I had difficulties with the [modal positioning](https://stackoverflow.com/questions/33184157/bootstrap-modal-height-as-per-window-height) and [preventing the win modal from disappearing when clicking externally.](https://stackoverflow.com/questions/16152073/prevent-bootstrap-modal-from-disappearing-when-clicking-outside-or-pressing-esca)
 
 
-I would like to thank my mentor Guido Cecilio for his support in helping me to understand JavaScript and guidance throughout the project. 
+I would like to thank my mentor Guido Cecilio for his support in helping me to understand JavaScript and his overall guidance throughout the project. 
 
-Last but certainly not least, I'd like to thank the amazing Fiid for their use of content, imagery and real-life business concept for the project. I am a happy customer and was only too excited to use them and their yummy pouches as the source material for my project!
+Last but certainly not least, I'd like to thank the amazing [Fiid](https://www.eatfiid.com/) for their use of content, imagery and real-life business concept for the project. I am an existing happy customer and was only too excited to use them and their yummy pouches as the source material for my project!
 
 
 [^ Back To Top ](#contents) 
